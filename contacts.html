@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <title>UPDATEMED</title>
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- add plugins css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+   <link rel="stylesheet" href="css/fancybox.css">
+  <!-- add plugins css end -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="header-top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <nav class="nav nav-menu-user">
+              <ul class="menu-user my-ul">
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="delivery.html">Доставка и оплата</a></li>
+                <li><a href="reviews.html">Отзывы</a></li>
+                <li><a href="blog.html">Блог</a></li>
+              </ul>
+            </nav>
+
+            <a href="mailto:info@updatemed.ru" class="mail-link">info@updatemed.ru</a>
+           <a href="#" class="link-callback" data-bs-toggle="modal" data-bs-target="#callbackModal">Заказать звонок</a>
+            <a href="tel:+78000000000" class="phone-link">8 (800) 00-000-00</a>
+
+            <ul class="menu-navigation my-ul">
+              <li>
+                <a href="basket.html" class="menu-navigation-link">
+                  <span class="menu-navigation-link__val">3</span>
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#basket-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="favorite.html" class="menu-navigation-link">
+                  <span class="menu-navigation-link__val">35</span>
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#favorite-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="comparison.html" class="menu-navigation-link">
+                  <span class="menu-navigation-link__val">2</span>
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#comparison-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-center">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <form method="post" class="form-search">
+              <label><input type="text" placeholder="Поиск" name="search" required></label>
+              <button type="submit"><svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#search-icon"></use>
+                </svg></button>
+            </form>
+
+            <nav class="nav-menu">
+              <ul class="menu my-ul">
+                <li class="menu-item dropdown"><a href="brands.html" class="menu-link dropdown-toggle"
+                    data-bs-toggle="dropdown">БРЕНДЫ</a>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-menu__link">ГИНЕКОЛОГИЯ</a>
+                    <a href="#" class="dropdown-menu__link">ГИНЕКОЛОГИЯ</a>
+                  </div>
+                </li>
+
+                <li class="menu-item dropdown"><a href="#" class="menu-link dropdown-toggle"
+                    data-bs-toggle="dropdown">Процедуры</a>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-menu__link">для липолиза</a>
+                  </div>
+                </li>
+                <li class="menu-item dropdown"><a href="#" class="menu-link dropdown-toggle"
+                    data-bs-toggle="dropdown">Технологии</a>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-menu__link">александрит</a>
+                    <a href="#" class="dropdown-menu__link active">фотоэпиляция</a>
+                  </div>
+                </li>
+                <li class="menu-item dropdown"><a href="#" class="menu-link dropdown-toggle"
+                    data-bs-toggle="dropdown">области применения</a>
+                  <div class="dropdown-menu">
+                    <a href="#" class="dropdown-menu__link">Для лица</a>
+                    <a href="#" class="dropdown-menu__link">Коррекция фигуры</a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+
+            <a href="tel:+78000000000" class="btn-call btn-border">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#phone-icon"></use>
+              </svg>
+            </a>
+            <a href="#" class="btn-burger btn-border">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#burger-icon"></use>
+              </svg>
+              <svg class="svg-icon svg-icon-close">
+                <use xlink:href="img/sprite.svg#close-icon"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="header-bottom">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <nav class="nav-menu">
+              <ul class="menu my-ul">
+                <li class="menu-item"><a href="#" class="menu-link">АППАРАТЫ ДЛЯ ЛИЦА</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">КОСМЕТОЛОГИЧЕСКИЕ ЛАЗЕРЫ</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">АППАРАТЫ ФОТОЭПИЛЯЦИИ</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">КОРРЕКЦИЯ ФИГУРЫ</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">КОМБАЙНЫ</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">ГИНЕКОЛОГИЯ</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">КРЕСЛА</a></li>
+                <li class="menu-item"><a href="brands.html" class="menu-link active">БРЕНДЫ</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="mobile-menu">
+      <div class="mobile-menu__head">
+        <nav class="nav-menu">
+          <ul class="menu my-ul">
+            <li class="menu-item dropdown"><a href="brands.html" class="menu-link dropdown-toggle"
+                data-bs-toggle="dropdown">БРЕНДЫ</a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-menu__link">ГИНЕКОЛОГИЯ</a>
+                <a href="#" class="dropdown-menu__link">ГИНЕКОЛОГИЯ</a>
+              </div>
+            </li>
+
+            <li class="menu-item dropdown"><a href="#" class="menu-link dropdown-toggle"
+                data-bs-toggle="dropdown">Процедуры</a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-menu__link">для липолиза</a>
+              </div>
+            </li>
+            <li class="menu-item dropdown"><a href="#" class="menu-link dropdown-toggle"
+                data-bs-toggle="dropdown">Технологии</a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-menu__link">александрит</a>
+                <a href="#" class="dropdown-menu__link active">фотоэпиляция</a>
+              </div>
+            </li>
+            <li class="menu-item dropdown"><a href="#" class="menu-link dropdown-toggle"
+                data-bs-toggle="dropdown">области применения</a>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-menu__link">Для лица</a>
+                <a href="#" class="dropdown-menu__link">Коррекция фигуры</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-menu__body">
+        <nav class="nav nav-menu-user">
+          <ul class="menu-user my-ul">
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="services.html">Услуги</a></li>
+            <li><a href="delivery.html">Доставка и оплата</a></li>
+            <li><a href="reviews.html">Отзывы</a></li>
+            <li><a href="blog.html">Блог</a></li>
+            <li><a href="basket.html">
+                <span>Корзина</span>
+                <span class="menu-user__val">3</span>
+              </a></li>
+            <li><a href="favorite.html">
+                <span>Избранное</span>
+                <span class="menu-user__val">35</span>
+              </a></li>
+            <li><a href="comparison.html">
+                <span>Сравнение</span>
+                <span class="menu-user__val">2</span>
+              </a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="mobile-menu__footer">
+        <a href="mailto:info@updatemed.ru" class="mail-link">info@updatemed.ru</a>
+        <a href="tel:+78000000000" class="phone-link">8 (800) 00-000-00</a>
+       <a href="#" class="link-callback" data-bs-toggle="modal" data-bs-target="#callbackModal">Заказать звонок</a>
+        <form method="post" class="form-search">
+          <label><input type="text" placeholder="Поиск" name="search" required></label>
+          <button type="submit"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search-icon"></use>
+            </svg></button>
+        </form>
+
+        <ul class="list-messengers my-ul">
+          <li><a href="#"><svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#vk-icon"></use>
+              </svg></a></li>
+          <li><a href="#"><svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#viber-icon"></use>
+              </svg></a></li>
+          <li><a href="#"><svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#whatsapp-icon"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-home page-contacts">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="nav-breadcrumb mb-48">
+            <ul class="breadcrumb">
+              <li><a href="index.html">Главная</a></li>
+              <li><span>Контакты</span></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-5">
+          <div class="page-contacts__content">
+            <h1>Контакты</h1>
+            <div class="contacts-item">
+              <a href="tel:+7800000000" class="contacts-item__link h4"><span class="color-accent">8 (800)</span>
+                00-00-00</a>
+            </div>
+            <div class="contacts-item">
+              <a href="mailto:info@updatemed.ru" class="contacts-item__link h4">info@updatemed.ru</a>
+            </div>
+            <ul class="list-messengers my-ul d-none d-lg-flex">
+              <li><a href="#"><svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#vk-icon"></use>
+                  </svg></a></li>
+              <li><a href="#"><svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#viber-icon"></use>
+                  </svg></a></li>
+              <li><a href="#"><svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#whatsapp-icon"></use>
+                  </svg></a></li>
+            </ul>
+            <div class="address-item h4">
+              <p>Москва, ул. Гладкова, 6, 117312</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-7">
+          <div class="map-wrapper">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?ll=37.250152%2C55.608556&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1Njg4MzA5MxLPAdCg0L7RgdGB0LjRjywg0JzQvtGB0LrQstCwLCDQndC-0LLQvtC80L7RgdC60L7QstGB0LrQuNC5INCw0LTQvNC40L3QuNGB0YLRgNCw0YLQuNCy0L3Ri9C5INC-0LrRgNGD0LMsINGA0LDQudC-0L0g0JLQvdGD0LrQvtCy0L4sINC00LDRh9C90YvQuSDQv9C-0YHRkdC70L7QuiDQmtC-0LrQvtGI0LrQuNC90L4sINGD0LvQuNGG0LAg0JPQu9Cw0LTQutC-0LLQsCwgNiIKDai8FEIVKm9eQg%2C%2C&sll=30.547764%2C50.449247&sspn=0.352936%2C0.154106&text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D1%83%D0%BB.%20%D0%93%D0%BB%D0%B0%D0%B4%D0%BA%D0%BE%D0%B2%D0%B0%2C%206%2C%20117312&z=12"
+              allowfullscreen="true" style="position:relative;"></iframe>
+          </div>
+        </div>
+
+        <div class="col-12 d-block d-lg-none">
+          <ul class="list-messengers my-ul">
+              <li><a href="#"><svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#vk-icon"></use>
+                  </svg></a></li>
+              <li><a href="#"><svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#viber-icon"></use>
+                  </svg></a></li>
+              <li><a href="#"><svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#whatsapp-icon"></use>
+                  </svg></a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-block d-lg-none"><a href="index.html" class="logo"><img src="img/logo-footer.svg"
+              alt=""></a></div>
+        <div class="col-12 d-flex flex-wrap align-items-start">
+          <div class="footer-column">
+            <a href="index.html" class="logo d-none d-lg-flex"><img src="img/logo-footer.svg" alt=""></a>
+            <div class="box-information">
+              <p>© 2013-2024 ООО "Тест" 129626 г. Москва, Мира д. 6.</p>
+              <p>Вся информация на сайте носит информационный характер и <br>
+                не является публичной офертой</p>
+            </div>
+          </div>
+          <ul class="menu-documents my-ul">
+            <li class="menu-documents__item"><a href="#" class="menu-documents__link link" target="_blank">Положение об
+                обработке персональных данных</a></li>
+            <li class="menu-documents__item"><a href="#" class="menu-documents__link link"
+                target="_blank">Пользовательское
+                соглашение</a></li>
+            <li class="menu-documents__item"><a href="#" class="menu-documents__link link" target="_blank">Согласие на
+                обработку данных метрическими программами</a></li>
+            <li class="menu-documents__item"><a href="#" class="menu-documents__link link" target="_blank">Согласие на
+                обработку персональных данных</a></li>
+          </ul>
+
+          <ul class="menu-footer my-ul">
+            <li class="menu-footer__item"><a href="catalog.html" class="menu-footer__link link">Каталог</a></li>
+            <li class="menu-footer__item"><a href="about.html" class="menu-footer__link link">О компании</a></li>
+            <li class="menu-footer__item"><a href="services.html" class="menu-footer__link link">Услуги</a></li>
+            <li class="menu-footer__item"><a href="delivery.html" class="menu-footer__link link">Доставка и оплата</a>
+            </li>
+            <li class="menu-footer__item"><a href="reviews.html" class="menu-footer__link link">Отзывы</a></li>
+            <li class="menu-footer__item"><a href="blog.html" class="menu-footer__link link">Блог</a></li>
+          </ul>
+
+          <div class="footer-contacts">
+            <div class="footer-contacts-item">
+              <span>Адрес:</span>
+              <p>Москва, ул. Гладкова, 6, 117312</p>
+            </div>
+            <div class="footer-contacts-item">
+              <span>Телефон:</span>
+              <a href="tel:+7800000000"><span class="color-accent">8 (800)</span> 00-00-00</a>
+            </div>
+            <div class="footer-contacts-item">
+              <span>E-mail:</span>
+              <a href="mailto:info@updatemed.ru">info@updatemed.ru</a>
+            </div>
+          </div>
+
+          <ul class="list-messengers list-messengers-column my-ul">
+            <li><a href="#"><svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#vk-icon"></use>
+                </svg></a></li>
+            <li><a href="#"><svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#viber-icon"></use>
+                </svg></a></li>
+            <li><a href="#"><svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#whatsapp-icon"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+   <!-- Modal -->
+  <div class="modal fade" id="callbackModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title h2">Заказать обратный звонок</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#close-icon"></use>
+            </svg></button>
+          <div class="box-text">
+            <p>Заполните форму, и наши специалисты свяжутся с вами в ближайшее время. Мы всегда готовы помочь вам
+              выбрать лучшее косметологическое оборудование для вашего бизнеса</p>
+          </div>
+        </div>
+        <div class="modal-body">
+          <form method="post" class="form-callback">
+            <label><input type="text" placeholder="Name" name="name" required></label>
+            <label><input type="text" placeholder="Telephone" name="phone" required></label>
+            <div class="form-footer">
+              <label class="label-checkbox">
+                <input type="checkbox" name="checkbox" required>
+                <span class="label-checkbox__custom"></span>
+                <span class="label-checkbox__text">Нажимая на кнопку, Вы соглашаетесь с условиями обработки
+                  персональных данных</span>
+              </label>
+              <button type="submit" class="btn btn-accent">Send</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+   <div class="modal fade" id="pricekModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title h2">Запросить цену</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#close-icon"></use>
+            </svg></button>
+          <div class="box-text">
+            <p>Заполните форму, и наши специалисты свяжутся с вами в ближайшее время. Мы всегда готовы помочь вам выбрать лучшее косметологическое оборудование для вашего бизнеса</p>
+          </div>
+        </div>
+        <div class="modal-body">
+          <form method="post" class="form-callback">
+            <label><input type="text" placeholder="Name" name="name" required></label>
+            <label><input type="text" placeholder="Telephone" name="phone" required></label>
+            <label><input type="text" placeholder="E-mail" name="mail" required></label>
+            <div class="form-footer">
+              <label class="label-checkbox">
+                <input type="checkbox" name="checkbox" required>
+                <span class="label-checkbox__custom"></span>
+                <span class="label-checkbox__text">Нажимая на кнопку, Вы соглашаетесь с условиями обработки
+                  персональных данных</span>
+              </label>
+              <button type="submit" class="btn btn-accent">Send</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- add plugins js-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/fancybox.umd.js"></script>
+  <!-- add plugins js end-->
+
+  <script src="js/common.js"></script>
+
+</body>
+
+</html>
