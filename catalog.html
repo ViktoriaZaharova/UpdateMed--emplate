@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -33,23 +33,25 @@
           <div class="col-12 d-flex flex-wrap align-items-center">
             <nav class="nav nav-menu-user">
               <ul class="menu-user my-ul">
-                <li><a href="about.html">О компании</a></li>
-                <li><a href="services.html">Услуги</a></li>
-                <li><a href="delivery.html">Доставка и оплата</a></li>
-                <li><a href="reviews.html">Отзывы</a></li>
-                <li><a href="blog.html">Блог</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="delivery.html">Shipping & Payment</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="blog.html">Blog</a></li>
               </ul>
             </nav>
 
             <a href="mailto:info@updatemed.ru" class="mail-link">info@updatemed.ru</a>
-            <a href="#" class="link-callback" data-bs-toggle="modal" data-bs-target="#callbackModal">Заказать звонок</a>
+            <a href="#" class="link-callback" data-bs-toggle="modal" data-bs-target="#callbackModal">
+              Request a Call
+            </a>
             <a href="tel:+78000000000" class="phone-link">8 (800) 00-000-00</a>
 
             <ul class="menu-navigation my-ul">
               <li>
                 <a href="basket.html" class="menu-navigation-link">
                   <span class="menu-navigation-link__val">3</span>
-                  <svg class="svg-icon">
+                  <svg class="svg-icon" aria-label="Shopping cart icon">
                     <use xlink:href="img/sprite.svg#basket-icon"></use>
                   </svg>
                 </a>
@@ -57,7 +59,7 @@
               <li>
                 <a href="favorite.html" class="menu-navigation-link">
                   <span class="menu-navigation-link__val">35</span>
-                  <svg class="svg-icon">
+                  <svg class="svg-icon" aria-label="Favorites icon">
                     <use xlink:href="img/sprite.svg#favorite-icon"></use>
                   </svg>
                 </a>
@@ -65,7 +67,7 @@
               <li>
                 <a href="comparison.html" class="menu-navigation-link">
                   <span class="menu-navigation-link__val">2</span>
-                  <svg class="svg-icon">
+                  <svg class="svg-icon" aria-label="Product comparison icon">
                     <use xlink:href="img/sprite.svg#comparison-icon"></use>
                   </svg>
                 </a>
@@ -75,57 +77,76 @@
         </div>
       </div>
     </div>
+
     <div class="header-center">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12 d-flex flex-wrap align-items-center">
-            <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+            <a href="index.html" class="logo">
+              <img src="img/logo.svg" alt="UpdateMed medical equipment store logo">
+            </a>
+
             <form method="post" class="form-search">
-              <label><input type="text" placeholder="Поиск" name="search" required></label>
-              <button type="submit"><svg class="svg-icon">
+              <label>
+                <input type="text" placeholder="Search" name="search" required aria-label="Search products">
+              </label>
+              <button type="submit" aria-label="Search button">
+                <svg class="svg-icon">
                   <use xlink:href="img/sprite.svg#search-icon"></use>
-                </svg></button>
+                </svg>
+              </button>
             </form>
 
             <nav class="nav-menu">
               <ul class="menu my-ul">
-                <li class="menu-item dropdown"><a href="brands.html" class="menu-link dropdown-toggle"
-                    data-bs-toggle="dropdown">БРЕНДЫ</a>
+                <li class="menu-item dropdown">
+                  <a href="brands.html" class="menu-link dropdown-toggle">Brands</a>
                   <div class="dropdown-menu">
-                    <a href="#" class="dropdown-menu__link">ГИНЕКОЛОГИЯ</a>
-                    <a href="#" class="dropdown-menu__link">ГИНЕКОЛОГИЯ</a>
+                    <div class="dropdown-menu-list column-count-2 w-100">
+                      <a href="#" class="dropdown-menu__link">Gynecology Equipment</a>
+                      <a href="#" class="dropdown-menu__link">Dermatology Devices</a>
+                    </div>
                   </div>
                 </li>
 
-                <li class="menu-item dropdown"><a href="#" class="menu-link dropdown-toggle"
-                    data-bs-toggle="dropdown">Процедуры</a>
+                <li class="menu-item dropdown">
+                  <a href="#" class="menu-link dropdown-toggle">Procedures</a>
                   <div class="dropdown-menu">
-                    <a href="#" class="dropdown-menu__link">для липолиза</a>
+                    <div class="dropdown-menu-list column-count-4 w-100">
+                      <a href="#" class="dropdown-menu__link">Lipolysis Treatments</a>
+                    </div>
                   </div>
                 </li>
-                <li class="menu-item dropdown"><a href="#" class="menu-link dropdown-toggle"
-                    data-bs-toggle="dropdown">Технологии</a>
+
+                <li class="menu-item dropdown">
+                  <a href="#" class="menu-link dropdown-toggle">Technologies</a>
                   <div class="dropdown-menu">
-                    <a href="#" class="dropdown-menu__link">александрит</a>
-                    <a href="#" class="dropdown-menu__link active">фотоэпиляция</a>
+                    <div class="dropdown-menu-list column-count-2 w-100">
+                      <a href="#" class="dropdown-menu__link">Alexandrite Technology</a>
+                      <a href="#" class="dropdown-menu__link active">Photoepilation Technology</a>
+                    </div>
                   </div>
                 </li>
-                <li class="menu-item dropdown"><a href="#" class="menu-link dropdown-toggle"
-                    data-bs-toggle="dropdown">области применения</a>
+
+                <li class="menu-item dropdown">
+                  <a href="#" class="menu-link dropdown-toggle">Application Areas</a>
                   <div class="dropdown-menu">
-                    <a href="#" class="dropdown-menu__link">Для лица</a>
-                    <a href="#" class="dropdown-menu__link">Коррекция фигуры</a>
+                    <div class="dropdown-menu-list w-100">
+                      <a href="#" class="dropdown-menu__link">Facial Treatments</a>
+                      <a href="#" class="dropdown-menu__link">Body Contouring</a>
+                    </div>
                   </div>
                 </li>
               </ul>
             </nav>
 
-            <a href="tel:+78000000000" class="btn-call btn-border">
+            <a href="tel:+78000000000" class="btn-call btn-border" aria-label="Call us">
               <svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#phone-icon"></use>
               </svg>
             </a>
-            <a href="#" class="btn-burger btn-border">
+
+            <a href="#" class="btn-burger btn-border" aria-label="Open menu">
               <svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#burger-icon"></use>
               </svg>
@@ -133,112 +154,9 @@
                 <use xlink:href="img/sprite.svg#close-icon"></use>
               </svg>
             </a>
+
           </div>
         </div>
-      </div>
-    </div>
-    <!-- <div class="header-bottom">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 d-flex flex-wrap align-items-center">
-            <nav class="nav-menu">
-              <ul class="menu my-ul">
-                <li class="menu-item"><a href="#" class="menu-link">АППАРАТЫ ДЛЯ ЛИЦА</a></li>
-                <li class="menu-item"><a href="#" class="menu-link">КОСМЕТОЛОГИЧЕСКИЕ ЛАЗЕРЫ</a></li>
-                <li class="menu-item"><a href="#" class="menu-link">АППАРАТЫ ФОТОЭПИЛЯЦИИ</a></li>
-                <li class="menu-item"><a href="#" class="menu-link">КОРРЕКЦИЯ ФИГУРЫ</a></li>
-                <li class="menu-item"><a href="#" class="menu-link">КОМБАЙНЫ</a></li>
-                <li class="menu-item"><a href="#" class="menu-link">ГИНЕКОЛОГИЯ</a></li>
-                <li class="menu-item"><a href="#" class="menu-link">КРЕСЛА</a></li>
-                <li class="menu-item"><a href="brands.html" class="menu-link active">БРЕНДЫ</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-    <div class="mobile-menu">
-      <div class="mobile-menu__head">
-        <nav class="nav-menu">
-          <ul class="menu my-ul">
-            <li class="menu-item dropdown"><a href="brands.html" class="menu-link dropdown-toggle"
-                data-bs-toggle="dropdown">БРЕНДЫ</a>
-              <div class="dropdown-menu">
-                <a href="#" class="dropdown-menu__link">ГИНЕКОЛОГИЯ</a>
-                <a href="#" class="dropdown-menu__link">ГИНЕКОЛОГИЯ</a>
-              </div>
-            </li>
-
-            <li class="menu-item dropdown"><a href="#" class="menu-link dropdown-toggle"
-                data-bs-toggle="dropdown">Процедуры</a>
-              <div class="dropdown-menu">
-                <a href="#" class="dropdown-menu__link">для липолиза</a>
-              </div>
-            </li>
-            <li class="menu-item dropdown"><a href="#" class="menu-link dropdown-toggle"
-                data-bs-toggle="dropdown">Технологии</a>
-              <div class="dropdown-menu">
-                <a href="#" class="dropdown-menu__link">александрит</a>
-                <a href="#" class="dropdown-menu__link active">фотоэпиляция</a>
-              </div>
-            </li>
-            <li class="menu-item dropdown"><a href="#" class="menu-link dropdown-toggle"
-                data-bs-toggle="dropdown">области применения</a>
-              <div class="dropdown-menu">
-                <a href="#" class="dropdown-menu__link">Для лица</a>
-                <a href="#" class="dropdown-menu__link">Коррекция фигуры</a>
-              </div>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="mobile-menu__body">
-        <nav class="nav nav-menu-user">
-          <ul class="menu-user my-ul">
-            <li><a href="about.html">О компании</a></li>
-            <li><a href="services.html">Услуги</a></li>
-            <li><a href="delivery.html">Доставка и оплата</a></li>
-            <li><a href="reviews.html">Отзывы</a></li>
-            <li><a href="blog.html">Блог</a></li>
-            <li><a href="basket.html">
-                <span>Корзина</span>
-                <span class="menu-user__val">3</span>
-              </a></li>
-            <li><a href="favorite.html">
-                <span>Избранное</span>
-                <span class="menu-user__val">35</span>
-              </a></li>
-            <li><a href="comparison.html">
-                <span>Сравнение</span>
-                <span class="menu-user__val">2</span>
-              </a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="mobile-menu__footer">
-        <a href="mailto:info@updatemed.ru" class="mail-link">info@updatemed.ru</a>
-        <a href="tel:+78000000000" class="phone-link">8 (800) 00-000-00</a>
-       <a href="#" class="link-callback" data-bs-toggle="modal" data-bs-target="#callbackModal">Заказать звонок</a>
-        <form method="post" class="form-search">
-          <label><input type="text" placeholder="Поиск" name="search" required></label>
-          <button type="submit"><svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#search-icon"></use>
-            </svg></button>
-        </form>
-
-        <ul class="list-messengers my-ul">
-          <li><a href="#"><svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#vk-icon"></use>
-              </svg></a></li>
-          <li><a href="#"><svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#viber-icon"></use>
-              </svg></a></li>
-          <li><a href="#"><svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#whatsapp-icon"></use>
-              </svg></a></li>
-        </ul>
       </div>
     </div>
   </header>
@@ -252,36 +170,36 @@
             <div class="title-wrapper__text">
               <nav class="nav-breadcrumb">
                 <ul class="breadcrumb">
-                  <li><a href="index.html">Главная</a></li>
-                  <li><span>Каталог товаров</span></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><span>Product Catalog</span></li>
                 </ul>
               </nav>
 
-              <h1>Каталог товаров</h1>
+              <h1>Product Catalog</h1>
             </div>
 
             <div class="title-wrapper__button">
               <div class="dropdown dropdown-sorting"><a href="#"
                   class="dropdown-toggle btn btn-dark btn-border-gray-stroke" data-bs-toggle="dropdown">
-                 все товары
+                  all products
                   <svg class="svg-icon">
                     <use xlink:href="img/sprite.svg#filter-icon"></use>
                   </svg>
                 </a>
                 <div class="dropdown-menu">
                   <div class="dropdown-menu__head">
-                    <h3 class="h2">Фильтр товаров</h3>
+                    <h3 class="h2">Product Filter</h3>
                     <a href="#" class="dropdown-menu__close btn btn-border"><svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#close-icon"></use>
-                    </svg></a>
+                        <use xlink:href="img/sprite.svg#close-icon"></use>
+                      </svg></a>
                   </div>
                   <div class="dropdown-menu__body">
                     <ul class="menu-sorting my-ul">
-                      <li><a href="#">все товары</a></li>
-                      <li><a href="#">по бренду</a></li>
-                      <li><a href="#" class="active">по процедуре</a></li>
-                      <li><a href="#">по технологии</a></li>
-                      <li><a href="#">по области применения</a></li>
+                      <li><a href="#">all products</a></li>
+                      <li><a href="#">by brand</a></li>
+                      <li><a href="#" class="active">by procedure</a></li>
+                      <li><a href="#">by technology</a></li>
+                      <li><a href="#">by application area</a></li>
                     </ul>
                   </div>
                 </div>
@@ -296,17 +214,17 @@
       <div class="row">
         <div class="col-12 col-md-6 col-xl-4 mb-24">
           <div class="popular-card popular-card-v3 popular-card1">
-            <a href="catalog.html" class="popular-card__img"><img src="img/category1.png" alt=""></a>
+            <a href="catalog.html" class="popular-card__img"><img src="img/category1.png" alt="RF lifting devices"></a>
             <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
               </svg></a>
             <div class="popular-card__content">
-              <a href="catalog.html" class="popular-card__name">Аппараты для <br>
-                RF-лифтинга</a>
+              <a href="catalog.html" class="popular-card__name">Devices for <br>
+                RF Lifting</a>
               <div class="box-text">
-                <p>Профессиональное оборудование со всеми
-                  необходимыми лицензиями
-                  и расширенной гарантией</p>
+                <p>Professional equipment with all
+                  required certifications
+                  and extended warranty</p>
               </div>
             </div>
           </div>
@@ -314,16 +232,17 @@
 
         <div class="col-12 col-md-6 col-xl-4 mb-24">
           <div class="popular-card popular-card-v2 popular-card-v3 popular-card2">
-            <a href="catalog.html" class="popular-card__img"><img src="img/category2.png" alt=""></a>
+            <a href="catalog.html" class="popular-card__img"><img src="img/category2.png"
+                alt="SMAS lifting devices"></a>
             <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
               </svg></a>
             <div class="popular-card__content">
-              <a href="catalog.html" class="popular-card__name">Аппараты для <br>SMAS-лифтинга</a>
+              <a href="catalog.html" class="popular-card__name">Devices for <br>SMAS Lifting</a>
               <div class="box-text">
-                <p>Профессиональное оборудование со всеми
-                  необходимыми лицензиями
-                  и расширенной гарантией</p>
+                <p>Professional equipment with all
+                  required certifications
+                  and extended warranty</p>
               </div>
             </div>
           </div>
@@ -331,16 +250,17 @@
 
         <div class="col-12 col-md-6 col-xl-4 mb-24">
           <div class="popular-card popular-card-v3 popular-card3">
-            <a href="catalog.html" class="popular-card__img"><img src="img/category3.png" alt=""></a>
+            <a href="catalog.html" class="popular-card__img"><img src="img/category3.png"
+                alt="Body contouring devices"></a>
             <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
               </svg></a>
             <div class="popular-card__content">
-              <a href="catalog.html" class="popular-card__name">Аппараты для <br>коррекции фигуры</a>
+              <a href="catalog.html" class="popular-card__name">Devices for <br>Body Contouring</a>
               <div class="box-text">
-                <p>Профессиональное оборудование со всеми
-                  необходимыми лицензиями
-                  и расширенной гарантией</p>
+                <p>Professional equipment with all
+                  required certifications
+                  and extended warranty</p>
               </div>
             </div>
           </div>
@@ -348,16 +268,16 @@
 
         <div class="col-12 col-md-6 col-xl-4 mb-24">
           <div class="popular-card popular-card-v2 popular-card-v3 popular-card4">
-            <a href="catalog.html" class="popular-card__img"><img src="img/category4.png" alt=""></a>
+            <a href="catalog.html" class="popular-card__img"><img src="img/category4.png" alt="Cosmetology systems"></a>
             <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
               </svg></a>
             <div class="popular-card__content">
-              <a href="catalog.html" class="popular-card__name">Косметологические <br> комбайны</a>
+              <a href="catalog.html" class="popular-card__name">Cosmetology <br>Systems</a>
               <div class="box-text">
-                <p>Профессиональное оборудование со всеми
-                  необходимыми лицензиями
-                  и расширенной гарантией</p>
+                <p>Professional equipment with all
+                  required certifications
+                  and extended warranty</p>
               </div>
             </div>
           </div>
@@ -365,16 +285,16 @@
 
         <div class="col-12 col-md-6 col-xl-4 mb-24">
           <div class="popular-card popular-card-v3 popular-card5">
-            <a href="catalog.html" class="popular-card__img"><img src="img/category5.png" alt=""></a>
+            <a href="catalog.html" class="popular-card__img"><img src="img/category5.png" alt="IPL laser systems"></a>
             <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
               </svg></a>
             <div class="popular-card__content">
-              <a href="catalog.html" class="popular-card__name">IPL-лазеры</a>
+              <a href="catalog.html" class="popular-card__name">IPL Lasers</a>
               <div class="box-text">
-                <p>Профессиональное оборудование со всеми
-                  необходимыми лицензиями
-                  и расширенной гарантией</p>
+                <p>Professional equipment with all
+                  required certifications
+                  and extended warranty</p>
               </div>
             </div>
           </div>
@@ -382,16 +302,16 @@
 
         <div class="col-12 col-md-6 col-xl-4 mb-24">
           <div class="popular-card popular-card-v2 popular-card-v3 popular-card6">
-            <a href="catalog.html" class="popular-card__img"><img src="img/category6.png" alt=""></a>
+            <a href="catalog.html" class="popular-card__img"><img src="img/category6.png" alt="Alexandrite lasers"></a>
             <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
               </svg></a>
             <div class="popular-card__content">
-              <a href="catalog.html" class="popular-card__name">Александритовые <br>лазеры</a>
+              <a href="catalog.html" class="popular-card__name">Alexandrite <br>Lasers</a>
               <div class="box-text">
-                <p>Профессиональное оборудование со всеми
-                  необходимыми лицензиями
-                  и расширенной гарантией</p>
+                <p>Professional equipment with all
+                  required certifications
+                  and extended warranty</p>
               </div>
             </div>
           </div>
@@ -399,16 +319,16 @@
 
         <div class="col-12 col-md-6 col-xl-4 mb-24">
           <div class="popular-card popular-card-v3 popular-card7">
-            <a href="catalog.html" class="popular-card__img"><img src="img/category7.png" alt=""></a>
+            <a href="catalog.html" class="popular-card__img"><img src="img/category7.png" alt="Diode lasers"></a>
             <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
               </svg></a>
             <div class="popular-card__content">
-              <a href="catalog.html" class="popular-card__name">Диодные лазеры</a>
+              <a href="catalog.html" class="popular-card__name">Diode Lasers</a>
               <div class="box-text">
-                <p>Профессиональное оборудование со всеми
-                  необходимыми лицензиями
-                  и расширенной гарантией</p>
+                <p>Professional equipment with all
+                  required certifications
+                  and extended warranty</p>
               </div>
             </div>
           </div>
@@ -416,17 +336,17 @@
 
         <div class="col-12 col-md-6 col-xl-4 mb-24">
           <div class="popular-card popular-card-v2 popular-card-v3 popular-card8">
-            <a href="catalog.html" class="popular-card__img"><img src="img/category8.png" alt=""></a>
+            <a href="catalog.html" class="popular-card__img"><img src="img/category8.png" alt="Lipolysis devices"></a>
             <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
               </svg></a>
             <div class="popular-card__content">
-              <a href="catalog.html" class="popular-card__name">Аппараты
-                <br>для липолиза</a>
+              <a href="catalog.html" class="popular-card__name">Devices
+                <br>for Lipolysis</a>
               <div class="box-text">
-                <p>Профессиональное оборудование со всеми
-                  необходимыми лицензиями
-                  и расширенной гарантией</p>
+                <p>Professional equipment with all
+                  required certifications
+                  and extended warranty</p>
               </div>
             </div>
           </div>
@@ -434,16 +354,17 @@
 
         <div class="col-12 col-md-6 col-xl-4 mb-24">
           <div class="popular-card popular-card-v3 popular-card9">
-            <a href="catalog.html" class="popular-card__img"><img src="img/category9.png" alt=""></a>
+            <a href="catalog.html" class="popular-card__img"><img src="img/category9.png"
+                alt="Fractional CO2 lasers"></a>
             <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
               </svg></a>
             <div class="popular-card__content">
-              <a href="catalog.html" class="popular-card__name">Фракционные СО2</a>
+              <a href="catalog.html" class="popular-card__name">Fractional CO2</a>
               <div class="box-text">
-                <p>Профессиональное оборудование со всеми
-                  необходимыми лицензиями
-                  и расширенной гарантией</p>
+                <p>Professional equipment with all
+                  required certifications
+                  and extended warranty</p>
               </div>
             </div>
           </div>
@@ -451,16 +372,16 @@
 
         <div class="col-12 col-md-6 col-xl-4 mb-24">
           <div class="popular-card popular-card-v2 popular-card-v3 popular-card10">
-            <a href="catalog.html" class="popular-card__img"><img src="img/category10.png" alt=""></a>
+            <a href="catalog.html" class="popular-card__img"><img src="img/category10.png" alt="Erbium lasers"></a>
             <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
               </svg></a>
             <div class="popular-card__content">
-              <a href="catalog.html" class="popular-card__name">Эрбиевые лазеры</a>
+              <a href="catalog.html" class="popular-card__name">Erbium Lasers</a>
               <div class="box-text">
-                <p>Профессиональное оборудование со всеми
-                  необходимыми лицензиями
-                  и расширенной гарантией</p>
+                <p>Professional equipment with all
+                  required certifications
+                  and extended warranty</p>
               </div>
             </div>
           </div>
@@ -468,17 +389,17 @@
 
         <div class="col-12 col-md-6 col-xl-4 mb-24">
           <div class="popular-card popular-card-v3 popular-card11">
-            <a href="catalog.html" class="popular-card__img"><img src="img/category11.png" alt=""></a>
+            <a href="catalog.html" class="popular-card__img"><img src="img/category11.png" alt="Lipolysis devices"></a>
             <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
               </svg></a>
             <div class="popular-card__content">
-              <a href="catalog.html" class="popular-card__name">Аппараты <br>
-                для липолиза</a>
+              <a href="catalog.html" class="popular-card__name">Devices <br>
+                for Lipolysis</a>
               <div class="box-text">
-                <p>Профессиональное оборудование со всеми
-                  необходимыми лицензиями
-                  и расширенной гарантией</p>
+                <p>Professional equipment with all
+                  required certifications
+                  and extended warranty</p>
               </div>
             </div>
           </div>
@@ -486,16 +407,16 @@
 
         <div class="col-12 col-md-6 col-xl-4 mb-24">
           <div class="popular-card popular-card-v2 popular-card-v3 popular-card12">
-            <a href="catalog.html" class="popular-card__img"><img src="img/category12.png" alt=""></a>
+            <a href="catalog.html" class="popular-card__img"><img src="img/category12.png" alt="Picosecond lasers"></a>
             <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
               </svg></a>
             <div class="popular-card__content">
-              <a href="catalog.html" class="popular-card__name">Пикосекундные лазеры</a>
+              <a href="catalog.html" class="popular-card__name">Picosecond Lasers</a>
               <div class="box-text">
-                <p>Профессиональное оборудование со всеми
-                  необходимыми лицензиями
-                  и расширенной гарантией</p>
+                <p>Professional equipment with all
+                  required certifications
+                  and extended warranty</p>
               </div>
             </div>
           </div>
@@ -503,34 +424,34 @@
 
         <div class="col-12 col-md-6 col-xl-4 mb-24">
           <div class="popular-card popular-card-v3 popular-card13">
-            <a href="catalog.html" class="popular-card__img"><img src="img/category13.png" alt=""></a>
+            <a href="catalog.html" class="popular-card__img"><img src="img/category13.png"
+                alt="Gynecology equipment"></a>
             <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
               </svg></a>
             <div class="popular-card__content">
-              <a href="catalog.html" class="popular-card__name">Гинекология</a>
+              <a href="catalog.html" class="popular-card__name">Gynecology</a>
               <div class="box-text">
-                <p>Профессиональное оборудование со всеми
-                  необходимыми лицензиями
-                  и расширенной гарантией</p>
+                <p>Professional equipment with all
+                  required certifications
+                  and extended warranty</p>
               </div>
             </div>
           </div>
         </div>
 
-
         <div class="col-12 col-md-6 col-xl-4 mb-24">
           <div class="popular-card popular-card-v2 popular-card-v3 popular-card14">
-            <a href="catalog.html" class="popular-card__img"><img src="img/category14.png" alt=""></a>
+            <a href="catalog.html" class="popular-card__img"><img src="img/category14.png" alt="Dye lasers"></a>
             <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
               </svg></a>
             <div class="popular-card__content">
-              <a href="catalog.html" class="popular-card__name">Лазеры на <br>красителях</a>
+              <a href="catalog.html" class="popular-card__name">Dye <br>Lasers</a>
               <div class="box-text">
-                <p>Профессиональное оборудование со всеми
-                  необходимыми лицензиями
-                  и расширенной гарантией</p>
+                <p>Professional equipment with all
+                  required certifications
+                  and extended warranty</p>
               </div>
             </div>
           </div>
@@ -538,16 +459,17 @@
 
         <div class="col-12 col-md-6 col-xl-4 mb-24">
           <div class="popular-card popular-card-v3 popular-card15">
-            <a href="catalog.html" class="popular-card__img"><img src="img/category15.png" alt=""></a>
+            <a href="catalog.html" class="popular-card__img"><img src="img/category15.png"
+                alt="Q-switched tattoo removal lasers"></a>
             <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
               </svg></a>
             <div class="popular-card__content">
-              <a href="catalog.html" class="popular-card__name">Q-switched/тату</a>
+              <a href="catalog.html" class="popular-card__name">Q-switched / Tattoo</a>
               <div class="box-text">
-                <p>Профессиональное оборудование со всеми
-                  необходимыми лицензиями
-                  и расширенной гарантией</p>
+                <p>Professional equipment with all
+                  required certifications
+                  and extended warranty</p>
               </div>
             </div>
           </div>
@@ -555,16 +477,17 @@
 
         <div class="col-12 col-md-6 col-xl-4 mb-24">
           <div class="popular-card popular-card-v2 popular-card-v3 popular-card16">
-            <a href="catalog.html" class="popular-card__img"><img src="img/category16.png" alt=""></a>
+            <a href="catalog.html" class="popular-card__img"><img src="img/category16.png"
+                alt="Rejuvenation devices"></a>
             <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
               </svg></a>
             <div class="popular-card__content">
-              <a href="catalog.html" class="popular-card__name">Омоложение</a>
+              <a href="catalog.html" class="popular-card__name">Rejuvenation</a>
               <div class="box-text">
-                <p>Профессиональное оборудование со всеми
-                  необходимыми лицензиями
-                  и расширенной гарантией</p>
+                <p>Professional equipment with all
+                  required certifications
+                  and extended warranty</p>
               </div>
             </div>
           </div>
@@ -572,16 +495,16 @@
 
         <div class="col-12 col-md-6 col-xl-4 mb-24">
           <div class="popular-card popular-card-v3 popular-card17">
-            <a href="catalog.html" class="popular-card__img"><img src="img/category17.png" alt=""></a>
+            <a href="catalog.html" class="popular-card__img"><img src="img/category17.png" alt="Cosmetology chairs"></a>
             <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
                 <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
               </svg></a>
             <div class="popular-card__content">
-              <a href="catalog.html" class="popular-card__name">Кресла</a>
+              <a href="catalog.html" class="popular-card__name">Chairs</a>
               <div class="box-text">
-                <p>Профессиональное оборудование со всеми
-                  необходимыми лицензиями
-                  и расширенной гарантией</p>
+                <p>Professional equipment with all
+                  required certifications
+                  and extended warranty</p>
               </div>
             </div>
           </div>
@@ -593,6 +516,7 @@
     </div>
   </section>
 
+
   <section class="steps-order callback-section p-24">
     <div class="container-fluid">
       <div class="row">
@@ -601,7 +525,8 @@
             <div class="steps-order__wrapper">
               <h2>Personal consultation</h2>
               <div class="box-text">
-                <p>Fill out the form, and our specialists will contact you shortly. We're always ready to help you choose the best cosmetology equipment for your business.</p>
+                <p>Fill out the form, and our specialists will contact you shortly. We're always ready to help you
+                  choose the best cosmetology equipment for your business.</p>
               </div>
               <form method="post" class="form-callback">
                 <label><input type="text" placeholder="Name" name="name" required></label>
@@ -610,7 +535,7 @@
                   <input type="checkbox" name="checkbox" required>
                   <span class="label-checkbox__custom"></span>
                   <span class="label-checkbox__text">By clicking the button, you agree to the terms of processing
-personal data</span>
+                    personal data</span>
                 </label>
                 <button type="submit" class="btn btn-accent">Send</button>
               </form>
@@ -618,7 +543,7 @@ personal data</span>
           </div>
         </div>
         <div class="col-xl-7 col-lg-6 col-12">
-          <div class="steps-order__img"><img src="img/callback-img.jpg" alt=""></div>
+          <div class="steps-order__img"><img src="img/callback-img.jpg" alt="callback image"></div>
         </div>
       </div>
     </div>
@@ -643,12 +568,12 @@ personal data</span>
       <div class="row">
         <div class="col-12 col-xl-6 mb-48">
           <div class="reviews-card">
-            <a href="reviews.html" class="reviews-card__photo"><img src="img/product1.png" alt=""></a>
+            <a href="reviews.html" class="reviews-card__photo"><img src="img/product1.png" alt="Reviews"></a>
             <div class="reviews-card__body">
               <div class="reviews-card__head">
                 <div class="reviews-card__head-box">
                   <a href="product.html" class="reviews-card__title h3">Alma <br>soprano</a>
-                  <a href="catalog.html" class="category-product-link link">Диодные лазеры</a>
+                  <a href="catalog.html" class="category-product-link link">Diode lasers</a>
                 </div>
                 <div class="reviews-card__head-box">
                   <div class="reviews-card__date">22.09.2024</div>
@@ -672,14 +597,14 @@ personal data</span>
                     </ul>
                     <div class="rating-box__val">4,2</div>
                   </div>
-                  <a href="#" class="link-reviews-all text-decoration">Все отзывы (33)</a>
+                  <a href="#" class="link-reviews-all text-decoration">All reviews (33)</a>
                 </div>
               </div>
               <div class="reviews-card__content">
-                <h4>Виктория Серегина</h4>
+                <h4>Victoria Seregina</h4>
                 <div class="box-text">
-                  <p>Хотела бы сказать большое спасибо UPDATEMED за лазер Alma soprano, который мы недавно приобрели.
-                    Работа</p>
+                  <p>I'd like to say a big thank you to UPDATEMED for the Alma Soprano laser we recently purchased.
+                    Work</p>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam ea, ad nobis atque ipsam fuga
                     totam nihil quae cupiditate explicabo iusto vitae officiis, velit quidem molestiae quas eum quasi!
                   </p>
@@ -697,13 +622,13 @@ personal data</span>
         </div>
         <div class="col-12 col-xl-6 mb-48">
           <div class="reviews-card">
-            <a href="reviews.html" class="reviews-card__photo"><img src="img/product2.png" alt=""></a>
+            <a href="reviews.html" class="reviews-card__photo"><img src="img/product2.png" alt="Reviews"></a>
             <div class="reviews-card__body">
               <div class="reviews-card__head">
                 <div class="reviews-card__head-box">
                   <a href="product.html" class="reviews-card__title h3">SHENB <br>
                     Virtue RF</a>
-                  <a href="catalog.html" class="category-product-link link">Диодные лазеры</a>
+                  <a href="catalog.html" class="category-product-link link">Diode lasers</a>
                 </div>
                 <div class="reviews-card__head-box">
                   <div class="reviews-card__date">22.09.2024</div>
@@ -727,14 +652,14 @@ personal data</span>
                     </ul>
                     <div class="rating-box__val">4,2</div>
                   </div>
-                  <a href="#" class="link-reviews-all text-decoration">Все отзывы (33)</a>
+                  <a href="#" class="link-reviews-all text-decoration">All reviews (33)</a>
                 </div>
               </div>
               <div class="reviews-card__content">
-                <h4>Виктория Серегина</h4>
+                <h4>Victoria Seregina</h4>
                 <div class="box-text">
-                  <p>Хотела бы сказать большое спасибо UPDATEMED за лазер Alma soprano, который мы недавно приобрели.
-                    Работа</p>
+                  <p>I'd like to say a big thank you to UPDATEMED for the Alma Soprano laser we recently purchased.
+                    Work</p>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam ea, ad nobis atque ipsam fuga
                     totam nihil quae cupiditate explicabo iusto vitae officiis, velit quidem molestiae quas eum quasi!
                   </p>
@@ -752,12 +677,12 @@ personal data</span>
         </div>
         <div class="col-12 col-xl-6 mb-48">
           <div class="reviews-card">
-            <a href="reviews.html" class="reviews-card__photo"><img src="img/product3.png" alt=""></a>
+            <a href="reviews.html" class="reviews-card__photo"><img src="img/product3.png" alt="Reviews"></a>
             <div class="reviews-card__body">
               <div class="reviews-card__head">
                 <div class="reviews-card__head-box">
                   <a href="product.html" class="reviews-card__title h3">Inmode <br>Morpheus 8</a>
-                  <a href="catalog.html" class="category-product-link link">Диодные лазеры</a>
+                  <a href="catalog.html" class="category-product-link link">Diode lasers</a>
                 </div>
                 <div class="reviews-card__head-box">
                   <div class="reviews-card__date">22.09.2024</div>
@@ -781,14 +706,14 @@ personal data</span>
                     </ul>
                     <div class="rating-box__val">4,2</div>
                   </div>
-                  <a href="#" class="link-reviews-all text-decoration">Все отзывы (33)</a>
+                  <a href="#" class="link-reviews-all text-decoration">All reviews (33)</a>
                 </div>
               </div>
               <div class="reviews-card__content">
-                <h4>Виктория Серегина</h4>
+                <h4>Victoria Seregina</h4>
                 <div class="box-text">
-                  <p>Хотела бы сказать большое спасибо UPDATEMED за лазер Alma soprano, который мы недавно приобрели.
-                    Работа</p>
+                  <p>I'd like to say a big thank you to UPDATEMED for the Alma Soprano laser we recently purchased.
+                    Work</p>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam ea, ad nobis atque ipsam fuga
                     totam nihil quae cupiditate explicabo iusto vitae officiis, velit quidem molestiae quas eum quasi!
                   </p>
@@ -806,12 +731,12 @@ personal data</span>
         </div>
         <div class="col-12 col-xl-6 mb-48">
           <div class="reviews-card">
-            <a href="reviews.html" class="reviews-card__photo"><img src="img/product4.png" alt=""></a>
+            <a href="reviews.html" class="reviews-card__photo"><img src="img/product4.png" alt="Reviews"></a>
             <div class="reviews-card__body">
               <div class="reviews-card__head">
                 <div class="reviews-card__head-box">
                   <a href="product.html" class="reviews-card__title h3">Cynosure <br>Potenza</a>
-                  <a href="catalog.html" class="category-product-link link">Диодные лазеры</a>
+                  <a href="catalog.html" class="category-product-link link">Diode lasers</a>
                 </div>
                 <div class="reviews-card__head-box">
                   <div class="reviews-card__date">22.09.2024</div>
@@ -835,14 +760,14 @@ personal data</span>
                     </ul>
                     <div class="rating-box__val">4,2</div>
                   </div>
-                  <a href="#" class="link-reviews-all text-decoration">Все отзывы (33)</a>
+                  <a href="#" class="link-reviews-all text-decoration">All reviews (33)</a>
                 </div>
               </div>
               <div class="reviews-card__content">
-                <h4>Виктория Серегина</h4>
+                <h4>Victoria Seregina</h4>
                 <div class="box-text">
-                  <p>Хотела бы сказать большое спасибо UPDATEMED за лазер Alma soprano, который мы недавно приобрели.
-                    Работа</p>
+                  <p>I'd like to say a big thank you to UPDATEMED for the Alma Soprano laser we recently purchased.
+                    Work</p>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam ea, ad nobis atque ipsam fuga
                     totam nihil quae cupiditate explicabo iusto vitae officiis, velit quidem molestiae quas eum quasi!
                   </p>
@@ -866,7 +791,7 @@ personal data</span>
     <div class="container">
       <div class="row mb-48">
         <div class="col-6">
-          <h2 class="m-0">Хиты продаж</h2>
+          <h2 class="m-0">Best Sellers</h2>
         </div>
         <div class="col-6">
           <div class="slider-arrows hits-slider-arrows justify-content-end"></div>
@@ -881,11 +806,12 @@ personal data</span>
                 <a href="#" class="btn-add-comparison btn-link btn-link-border-gray-stroke"><svg class="svg-icon">
                     <use xlink:href="img/sprite.svg#comparison-icon"></use>
                   </svg></a>
-                <a href="product.html" class="product-card__photo"><img src="img/hits1.png" alt=""></a>
+                <a href="product.html" class="product-card__photo"><img src="img/hits1.png"
+                    alt="Inmode Morpheus 8 RF lifting device"></a>
                 <div class="product-card__body">
                   <div class="product-card__head">
                     <div class="product-card__head-box">
-                      <a href="product.html" class="product-card__name h4">Inmode Morpheus 8 RF-lifting device</a>
+                      <a href="product.html" class="product-card__name h4">Inmode Morpheus 8 RF Lifting Device</a>
                     </div>
                     <div class="product-card__head-box">
                       <div class="rating-box justify-content-end">
@@ -919,7 +845,7 @@ personal data</span>
                   </div>
                   <div class="box-text">
                     <p>A recognized leader in the world of cosmetology equipment,
-                    combining innovation, style, and reliability.</p>
+                      combining innovation, style, and reliability.</p>
                   </div>
                   <div class="btn-group">
                     <a href="#" class="btn btn-accent btn-add-basket">
@@ -929,7 +855,8 @@ personal data</span>
                       </svg>
                     </a>
 
-                    <a href="#" class="btn-add-favorite btn-link btn-link-border-accent"><svg class="svg-icon">
+                    <a href="#" class="btn-add-favorite btn-link btn-link-border-accent" data-bs-toggle="modal"
+                      data-bs-target="#callbackModal"><svg class="svg-icon">
                         <use xlink:href="img/sprite.svg#favorite-icon"></use>
                       </svg></a>
                   </div>
@@ -941,12 +868,12 @@ personal data</span>
                 <a href="#" class="btn-add-comparison btn-link btn-link-border-gray-stroke"><svg class="svg-icon">
                     <use xlink:href="img/sprite.svg#comparison-icon"></use>
                   </svg></a>
-                <a href="product.html" class="product-card__photo"><img src="img/hits2.png" alt=""></a>
+                <a href="product.html" class="product-card__photo"><img src="img/hits2.png"
+                    alt="Inmode Morpheus 8 RF lifting device"></a>
                 <div class="product-card__body">
                   <div class="product-card__head">
                     <div class="product-card__head-box">
-                      <a href="product.html" class="product-card__name h4">Аппарат для
-                        RF-лифтинга Scarlett</a>
+                      <a href="product.html" class="product-card__name h4">Scarlett RF-lifting device</a>
                     </div>
                     <div class="product-card__head-box">
                       <div class="rating-box justify-content-end">
@@ -980,7 +907,7 @@ personal data</span>
                   </div>
                   <div class="box-text">
                     <p>A recognized leader in the world of cosmetology equipment,
-                    combining innovation, style, and reliability.</p>
+                      combining innovation, style, and reliability.</p>
                   </div>
                   <div class="btn-group">
                     <a href="#" class="btn btn-accent btn-add-basket">
@@ -1002,7 +929,8 @@ personal data</span>
                 <a href="#" class="btn-add-comparison btn-link btn-link-border-gray-stroke"><svg class="svg-icon">
                     <use xlink:href="img/sprite.svg#comparison-icon"></use>
                   </svg></a>
-                <a href="product.html" class="product-card__photo"><img src="img/hits3.png" alt=""></a>
+                <a href="product.html" class="product-card__photo"><img src="img/hits3.png"
+                    alt="Inmode Morpheus 8 RF lifting device"></a>
                 <div class="product-card__body">
                   <div class="product-card__head">
                     <div class="product-card__head-box">
@@ -1040,7 +968,7 @@ personal data</span>
                   </div>
                   <div class="box-text">
                     <p>A recognized leader in the world of cosmetology equipment,
-                    combining innovation, style, and reliability.</p>
+                      combining innovation, style, and reliability.</p>
                   </div>
                   <div class="btn-group">
                     <a href="#" class="btn btn-accent btn-add-basket">
@@ -1062,7 +990,8 @@ personal data</span>
                 <a href="#" class="btn-add-comparison btn-link btn-link-border-gray-stroke"><svg class="svg-icon">
                     <use xlink:href="img/sprite.svg#comparison-icon"></use>
                   </svg></a>
-                <a href="product.html" class="product-card__photo"><img src="img/hits1.png" alt=""></a>
+                <a href="product.html" class="product-card__photo"><img src="img/hits1.png"
+                    alt="Inmode Morpheus 8 RF lifting device"></a>
                 <div class="product-card__body">
                   <div class="product-card__head">
                     <div class="product-card__head-box">
@@ -1100,7 +1029,7 @@ personal data</span>
                   </div>
                   <div class="box-text">
                     <p>A recognized leader in the world of cosmetology equipment,
-                    combining innovation, style, and reliability.</p>
+                      combining innovation, style, and reliability.</p>
                   </div>
                   <div class="btn-group">
                     <a href="#" class="btn btn-accent btn-add-basket">
@@ -1149,13 +1078,15 @@ personal data</span>
                   <div class="blog-card">
                     <div class="blog-card__head">
                       <div class="blog-card__date">01.02.2025</div>
-                      <a href="blog.html" class="blog-card__img"><img src="img/blog1.jpg" alt=""></a>
+                      <a href="blog.html" class="blog-card__img"><img src="img/blog1.jpg" alt="Blog 1"></a>
                     </div>
                     <div class="blog-card__body">
-                      <a href="blog.html" class="blog-card__title h4">How to choose the ideal cosmetology equipment for your business?</a>
+                      <a href="blog.html" class="blog-card__title h4">How to choose the ideal cosmetology equipment for
+                        your business?</a>
                       <div class="box-text">
                         <p>Looking for equipment for a beauty salon or clinic?
-In our new blog, we'll tell you what to look for when choosing, how to avoid overpaying, and which technologies are trending today...</p>
+                          In our new blog, we'll tell you what to look for when choosing, how to avoid overpaying, and
+                          which technologies are trending today...</p>
                         <a href="article.html" class="link-details link">More details</a>
                       </div>
                       <a href="article.html" class="btn btn-link btn-link-border-accent"><svg class="svg-icon">
@@ -1166,12 +1097,15 @@ In our new blog, we'll tell you what to look for when choosing, how to avoid ove
                   <div class="blog-card">
                     <div class="blog-card__head">
                       <div class="blog-card__date">01.02.2025</div>
-                      <a href="blog.html" class="blog-card__img"><img src="img/blog2.jpg" alt=""></a>
+                      <a href="blog.html" class="blog-card__img"><img src="img/blog2.jpg" alt="Blog 2"></a>
                     </div>
                     <div class="blog-card__body">
-                      <a href="blog.html" class="blog-card__title h4">Top 10 Essential Cosmetology Equipment for a Modern Cosmetology Office</a>
+                      <a href="blog.html" class="blog-card__title h4">Top 10 Essential Cosmetology Equipment for a
+                        Modern Cosmetology Office</a>
                       <div class="box-text">
-                        <p>Modern cosmetology equipment plays a crucial role in the success of your beauty salon or beauty office. When everyone else offers similar treatments, it's important to stand out from the competition...</p>
+                        <p>Modern cosmetology equipment plays a crucial role in the success of your beauty salon or
+                          beauty office. When everyone else offers similar treatments, it's important to stand out from
+                          the competition...</p>
                         <a href="article.html" class="link-details link">More details</a>
                       </div>
                       <a href="article.html" class="btn btn-link btn-link-border-accent"><svg class="svg-icon">
@@ -1182,12 +1116,14 @@ In our new blog, we'll tell you what to look for when choosing, how to avoid ove
                   <div class="blog-card">
                     <div class="blog-card__head">
                       <div class="blog-card__date">01.02.2025</div>
-                      <a href="blog.html" class="blog-card__img"><img src="img/blog3.jpg" alt=""></a>
+                      <a href="blog.html" class="blog-card__img"><img src="img/blog3.jpg" alt="Blog 3"></a>
                     </div>
                     <div class="blog-card__body">
                       <a href="blog.html" class="blog-card__title h4">Equipment certification and liability</a>
                       <div class="box-text">
-                        <p>In this article, we'll discuss a very important detail related to equipment certification. General questions about what documents devices require and how to verify them have already been addressed, but...</p>
+                        <p>In this article, we'll discuss a very important detail related to equipment certification.
+                          General questions about what documents devices require and how to verify them have already
+                          been addressed, but...</p>
                         <a href="article.html" class="link-details link">More details</a>
                       </div>
                       <a href="article.html" class="btn btn-link btn-link-border-accent"><svg class="svg-icon">
@@ -1213,65 +1149,86 @@ In our new blog, we'll tell you what to look for when choosing, how to avoid ove
               <div class="row">
                 <div class="col-12 col-lg-6">
                   <div class="seo-content__content">
-                    <h2>Косметологическое оборудование от UPDATEMED <span class="color-accent">— залог успеха вашего
-                        бизнеса</span></h2>
+                    <h2>
+                      Cosmetology Equipment from UPDATEMED
+                      <span class="color-accent">— the key to your business success</span>
+                    </h2>
                     <div class="box-text">
-                      <p>Ищете качественное и надежное оборудование для косметологии? UPDATEMED предлагает широкий
-                        ассортимент современных решений для салонов красоты и клиник. <strong>Мы знаем, что важно для
-                          профессионалов индустрии красоты, и готовы предложить:</strong></p>
+                      <p>
+                        Looking for high-quality and reliable cosmetology equipment?
+                        UPDATEMED offers a wide range of modern solutions for beauty salons and clinics.
+                        <strong>
+                          We understand what matters to beauty industry professionals and are ready to offer:
+                        </strong>
+                      </p>
                     </div>
                   </div>
                 </div>
+
                 <div class="col-12 col-lg-6">
                   <ul class="list-advantages my-ul">
                     <li class="list-advantages-item">
-                      <h4>Широкий ассортимент</h4>
+                      <h3 class="h4">Wide product range</h3>
                       <div class="box-text">
-                        <p>Аппараты для ухода за лицом и телом, лазеры, аппараты для контурной пластики и многое другое
+                        <p>
+                          Devices for facial and body care, lasers, contouring equipment, and much more
                         </p>
-                      </div>
-                    </li>
-                    <li class="list-advantages-item">
-                      <h4>Современные технологии</h4>
-                      <div class="box-text">
-                        <p>Оборудование
-                          с инновационными функциями для достижения максимального эффекта</p>
-                      </div>
-                    </li>
-                    <li class="list-advantages-item">
-                      <h4>Качество и безопасность</h4>
-                      <div class="box-text">
-                        <p>Сертифицированная продукция от ведущих мировых производителей</p>
                       </div>
                     </li>
 
                     <li class="list-advantages-item">
-                      <h4>Широкий ассортимент</h4>
+                      <h4>Advanced technologies</h4>
                       <div class="box-text">
-                        <p>Аппараты для ухода за лицом и телом, лазеры, аппараты для контурной пластики и многое другое
+                        <p>
+                          Equipment with innovative features to achieve maximum results
                         </p>
                       </div>
                     </li>
+
                     <li class="list-advantages-item">
-                      <h4>Современные технологии</h4>
+                      <h4>Quality and safety</h4>
                       <div class="box-text">
-                        <p>Оборудование
-                          с инновационными функциями для достижения максимального эффекта</p>
+                        <p>
+                          Certified products from leading global manufacturers
+                        </p>
                       </div>
                     </li>
+
                     <li class="list-advantages-item">
-                      <h4>Качество и безопасность</h4>
+                      <h3 class="h4">Wide product range</h3>
                       <div class="box-text">
-                        <p>Сертифицированная продукция от ведущих мировых производителей</p>
+                        <p>
+                          Devices for facial and body care, lasers, contouring equipment, and much more
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="list-advantages-item">
+                      <h4>Advanced technologies</h4>
+                      <div class="box-text">
+                        <p>
+                          Equipment with innovative features to achieve maximum results
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="list-advantages-item">
+                      <h4>Quality and safety</h4>
+                      <div class="box-text">
+                        <p>
+                          Certified products from leading global manufacturers
+                        </p>
                       </div>
                     </li>
                   </ul>
+
                   <a href="#" class="btn btn-border btn-toggler">
                     <span>Show more</span>
                     <svg class="svg-icon btn-icon">
                       <use xlink:href="img/sprite.svg#plus-icon"></use>
                     </svg>
                   </a>
+
                 </div>
               </div>
             </div>
@@ -1281,50 +1238,71 @@ In our new blog, we'll tell you what to look for when choosing, how to avoid ove
     </div>
   </section>
 
-
   <footer>
     <div class="container">
       <div class="row">
-        <div class="col-12 d-block d-lg-none"><a href="index.html" class="logo"><img src="img/logo-footer.svg"
-              alt=""></a></div>
+
+        <div class="col-12 d-block d-lg-none">
+          <a href="index.html" class="logo">
+            <img src="img/logo-footer.svg" alt="UPDATEMED company logo">
+          </a>
+        </div>
+
         <div class="col-12 d-flex flex-wrap align-items-start">
+
           <div class="footer-column">
-            <a href="index.html" class="logo d-none d-lg-flex"><img src="img/logo-footer.svg" alt=""></a>
+            <a href="index.html" class="logo d-none d-lg-flex">
+              <img src="img/logo-footer.svg" alt="UPDATEMED company logo">
+            </a>
             <div class="box-information">
-              <p>© 2013-2024 ООО "Тест" 129626 г. Москва, Мира д. 6.</p>
-              <p>Вся информация на сайте носит информационный характер и <br>
-                не является публичной офертой</p>
+              <p>© 2013–2024 LLC “Test”, 6 Mira St., Moscow, 129626.</p>
+              <p>
+                All information on this website is for informational purposes only<br>
+                and does not constitute a public offer
+              </p>
             </div>
           </div>
+
           <ul class="menu-documents my-ul">
-            <li class="menu-documents__item"><a href="#" class="menu-documents__link link" target="_blank">Положение об
-                обработке персональных данных</a></li>
-            <li class="menu-documents__item"><a href="#" class="menu-documents__link link"
-                target="_blank">Пользовательское
-                соглашение</a></li>
-            <li class="menu-documents__item"><a href="#" class="menu-documents__link link" target="_blank">Согласие на
-                обработку данных метрическими программами</a></li>
-            <li class="menu-documents__item"><a href="#" class="menu-documents__link link" target="_blank">Согласие на
-                обработку персональных данных</a></li>
+            <li class="menu-documents__item">
+              <a href="#" class="menu-documents__link link" target="_blank">
+                Personal Data Processing Policy
+              </a>
+            </li>
+            <li class="menu-documents__item">
+              <a href="#" class="menu-documents__link link" target="_blank">
+                User Agreement
+              </a>
+            </li>
+            <li class="menu-documents__item">
+              <a href="#" class="menu-documents__link link" target="_blank">
+                Consent to Data Processing by Analytics Services
+              </a>
+            </li>
+            <li class="menu-documents__item">
+              <a href="#" class="menu-documents__link link" target="_blank">
+                Consent to Personal Data Processing
+              </a>
+            </li>
           </ul>
 
           <ul class="menu-footer my-ul">
-            <li class="menu-footer__item"><a href="catalog.html" class="menu-footer__link link">Каталог</a></li>
-            <li class="menu-footer__item"><a href="about.html" class="menu-footer__link link">О компании</a></li>
-            <li class="menu-footer__item"><a href="services.html" class="menu-footer__link link">Услуги</a></li>
-            <li class="menu-footer__item"><a href="delivery.html" class="menu-footer__link link">Доставка и оплата</a>
+            <li class="menu-footer__item"><a href="catalog.html" class="menu-footer__link link">Catalog</a></li>
+            <li class="menu-footer__item"><a href="about.html" class="menu-footer__link link">About Us</a></li>
+            <li class="menu-footer__item"><a href="services.html" class="menu-footer__link link">Services</a></li>
+            <li class="menu-footer__item"><a href="delivery.html" class="menu-footer__link link">Delivery & Payment</a>
             </li>
-            <li class="menu-footer__item"><a href="reviews.html" class="menu-footer__link link">Отзывы</a></li>
-            <li class="menu-footer__item"><a href="blog.html" class="menu-footer__link link">Блог</a></li>
+            <li class="menu-footer__item"><a href="reviews.html" class="menu-footer__link link">Reviews</a></li>
+            <li class="menu-footer__item"><a href="blog.html" class="menu-footer__link link">Blog</a></li>
           </ul>
 
           <div class="footer-contacts">
             <div class="footer-contacts-item">
-              <span>Адрес:</span>
-              <p>Москва, ул. Гладкова, 6, 117312</p>
+              <span>Address:</span>
+              <p>Moscow, Gladkova St., 6, 117312</p>
             </div>
             <div class="footer-contacts-item">
-              <span>Телефон:</span>
+              <span>Phone:</span>
               <a href="tel:+7800000000"><span class="color-accent">8 (800)</span> 00-00-00</a>
             </div>
             <div class="footer-contacts-item">
@@ -1344,25 +1322,35 @@ In our new blog, we'll tell you what to look for when choosing, how to avoid ove
                   <use xlink:href="img/sprite.svg#whatsapp-icon"></use>
                 </svg></a></li>
           </ul>
+
+          <a href="#" class="btn-border btn-toggle-documents">
+            <span>Legal Documents</span>
+          </a>
+
         </div>
       </div>
     </div>
   </footer>
 
-   <!-- Modal -->
   <div class="modal fade" id="callbackModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
+
         <div class="modal-header">
-          <h3 class="modal-title h2">Заказать обратный звонок</h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-icon">
+          <h3 class="modal-title h2">Request a Call Back</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <svg class="svg-icon">
               <use xlink:href="img/sprite.svg#close-icon"></use>
-            </svg></button>
+            </svg>
+          </button>
           <div class="box-text">
-            <p>Заполните форму, и наши специалисты свяжутся с вами в ближайшее время. Мы всегда готовы помочь вам
-              выбрать лучшее косметологическое оборудование для вашего бизнеса</p>
+            <p>
+              Fill out the form and our specialists will contact you shortly.
+              We are always ready to help you choose the best cosmetology equipment for your business.
+            </p>
           </div>
         </div>
+
         <div class="modal-body">
           <form method="post" class="form-callback">
             <label><input type="text" placeholder="Name" name="name" required></label>
@@ -1371,8 +1359,9 @@ In our new blog, we'll tell you what to look for when choosing, how to avoid ove
               <label class="label-checkbox">
                 <input type="checkbox" name="checkbox" required>
                 <span class="label-checkbox__custom"></span>
-                <span class="label-checkbox__text">Нажимая на кнопку, Вы соглашаетесь с условиями обработки
-                  персональных данных</span>
+                <span class="label-checkbox__text">
+                  By clicking the button, you agree to the terms of personal data processing
+                </span>
               </label>
               <button type="submit" class="btn btn-accent">Send</button>
             </div>
@@ -1383,18 +1372,25 @@ In our new blog, we'll tell you what to look for when choosing, how to avoid ove
     </div>
   </div>
 
-   <div class="modal fade" id="priceModal" tabindex="-1" aria-hidden="true">
+  <div class="modal fade" id="priceModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
+
         <div class="modal-header">
-          <h3 class="modal-title h2">Запросить цену</h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><svg class="svg-icon">
+          <h3 class="modal-title h2">Request a Price</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <svg class="svg-icon">
               <use xlink:href="img/sprite.svg#close-icon"></use>
-            </svg></button>
+            </svg>
+          </button>
           <div class="box-text">
-            <p>Заполните форму, и наши специалисты свяжутся с вами в ближайшее время. Мы всегда готовы помочь вам выбрать лучшее косметологическое оборудование для вашего бизнеса</p>
+            <p>
+              Fill out the form and our specialists will contact you shortly.
+              We are always ready to help you choose the best cosmetology equipment for your business.
+            </p>
           </div>
         </div>
+
         <div class="modal-body">
           <form method="post" class="form-callback">
             <label><input type="text" placeholder="Name" name="name" required></label>
@@ -1404,8 +1400,9 @@ In our new blog, we'll tell you what to look for when choosing, how to avoid ove
               <label class="label-checkbox">
                 <input type="checkbox" name="checkbox" required>
                 <span class="label-checkbox__custom"></span>
-                <span class="label-checkbox__text">Нажимая на кнопку, Вы соглашаетесь с условиями обработки
-                  персональных данных</span>
+                <span class="label-checkbox__text">
+                  By clicking the button, you agree to the terms of personal data processing
+                </span>
               </label>
               <button type="submit" class="btn btn-accent">Send</button>
             </div>
