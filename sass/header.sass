@@ -1,0 +1,308 @@
+@import "vars"
+
+header
+  background: $light-gray
+  position: relative
+  z-index: 5
+  margin: 0 0 24px
+
+.logo
+  max-width: 296px  
+
+.header-top
+  padding: 21px 0
+  background: $white
+
+.nav-menu-user
+  margin: 0 auto 0 0  
+
+.menu-user
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 16px
+  line-height: 20px
+  letter-spacing: 0.2px
+  li
+    margin: 0 32px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: $dark60
+      &:hover
+        color: $accent
+
+.menu-navigation
+  display: flex
+  align-items: center
+  margin: 0 0 0 80px
+  li
+    margin: 0 34px 0 0
+    &:last-child
+      margin: 0
+
+.menu-navigation-link
+  position: relative
+  z-index: 1
+  @include d-flex
+  width: 60px
+  height: 36px
+  min-width: 60px
+  background: $light-gray
+  border-radius: 16px
+  fill: $dark60
+  padding: 4px
+  &__val
+    position: absolute
+    z-index: 1
+    top: -10px
+    right: -4px
+    background: $accent
+    color: $white
+    border-radius: 8px
+    font-size: 12px
+    letter-spacing: 0.6px
+    font-family: $font
+    padding: 0 7px
+    height: 16px
+    text-align: center
+    @include d-flex
+  &:hover
+    background: $dark
+    fill: $white
+
+.header-center
+  background: $light-gray
+  // padding: 24px 0
+  border-radius: 20px 20px 0 0
+  .container-fluid
+    position: relative
+    z-index: 1
+
+.form-search
+  margin: 0 auto 0 32px
+  max-width: 448px
+  width: 100%
+  position: relative
+  z-index: 1
+  label
+    margin: 0
+  [type='submit']
+    position: absolute
+    right: 24px
+    top: 20px
+    z-index: 1
+    width: 16px
+    height: 16px
+    min-width: 16px
+    stroke: $dark40
+    fill: none
+    background: transparent
+    padding: 0
+    @include d-flex
+    border: none
+    border-radius: 0
+
+.mail-link
+  font-size: 18px
+  font-weight: 500
+  font-family: $font
+  color: $dark60
+  letter-spacing: 0.6px
+  margin: 0 56px 0 0
+  &:hover
+    color: $accent
+
+.phone-link
+  font-family: $font
+  font-size: 32px
+  font-weight: bold
+  color: $dark
+  margin: 0 0 0 16px
+  &:hover
+    color: $accent
+
+.link-callback
+  font-size: 18px
+  line-height: 20px
+  text-decoration: underline
+  color: $dark60
+  letter-spacing: 0.6px
+  &:hover
+    color: $accent
+
+.header-bottom
+  width: 100%
+  border-bottom: 1px solid $light-gray
+  border-radius: 20px 20px 0 0
+  background: $white
+
+.nav-menu
+  width: fit-content
+  margin: 0 0 0 auto
+
+.menu
+  width: 100%
+  text-align: center
+  display: flex
+  align-items: stretch
+  font-size: 18px
+  font-weight: bold
+  text-transform: uppercase
+  letter-spacing: 0.2px
+  li
+    margin: 0 16px 0 0
+    &:last-child
+      margin: 0
+  .dropdown
+    position: initial
+    padding: 39px 0  
+  .dropdown-toggle
+    padding: 0 12px 0 24px
+    display: flex
+    align-items: center
+    border-radius: 32px
+    &:hover
+      background: #fff
+      color: $dark
+    &.show
+      background: #fff
+      color: $dark
+    &:after
+      background: url('../img/arrow-bottom.svg') no-repeat center
+      background-size: 100%
+      width: 40px
+      height: 40px
+      min-width: 40px
+      margin: 0
+      border: none
+  .dropdown-menu
+    // width: fit-content
+    // white-space: nowrap
+    margin: 0 auto
+    width: 100%
+    max-width: 1520px
+    left: 50%
+    top: 100%
+    transform: translate(-50%,0)
+    &__link
+      border-radius: 8px
+      padding: 6px 11px
+      margin: 0 0 8px
+      &:last-child
+        margin: 0 
+      &:hover, &:focus, &.active
+        color: $dark
+        background: $light-gray   
+
+
+.menu-item
+  flex: auto
+
+.menu-link
+  padding: 15px 24px
+  color: $dark
+  &:hover, &.active
+    color: $accent
+
+.btn-burger
+  width: 52px
+  height: 52px
+  min-width: 52px
+  border: 1px solid $dark
+  border-radius: 50%
+  padding: 10px
+  cursor: pointer
+  display: none
+  .svg-icon-close
+    display: none
+  &.click
+    .svg-icon
+      display: none
+    .svg-icon-close
+      display: block
+
+    
+
+.mobile-menu
+  display: none
+  z-index: 10
+  position: fixed
+  left: 0
+  top: 84px
+  height: calc( 100% - 84px)
+  width: 100%
+  background: #fff
+  text-align: center
+  overflow-y: auto
+  &__head
+    width: 100%
+    padding: 16px
+  .menu
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    li
+      width: 100%
+      margin: 0 0 12px
+      &:last-child
+        margin: 0
+      a
+        width: 100%
+        padding: 14px
+        border-radius: 24px
+        background: $light-gray
+  &__body
+    padding: 24px
+  .menu-user
+    width: 100%
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    li
+      margin: 0 0 32px
+      &:last-child
+        margin: 0
+      a
+        display: flex
+        align-items: center
+    &__val
+      background: $accent
+      margin: 0 0 0 4px
+      color: #fff
+      padding: 0 7px
+      border-radius: 8px
+      height: 16px
+      font-size: 12px
+      font-family: $font
+      @include d-flex
+  &__footer
+    padding: 48px 24px
+    width: 100%
+    background: $light-gray
+  .list-messengers
+    justify-content: center
+  .form-search
+    max-width: 432px
+    margin: 48px auto
+  .link-callback
+    margin: 0 auto
+    display: block
+  .phone-link
+    margin: 24px auto 16px
+    color: $accent
+  .mail-link
+    margin: 0 auto
+    color: $dark60
+
+.btn-call
+  border-radius: 50%
+  padding: 10px
+  width: 52px
+  height: 52px
+  min-width: 52px
+  display: none
+  align-items: center
+  justify-content: center
+  margin: 0 16px 0 auto
+  fill: #192939

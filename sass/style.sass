@@ -1,0 +1,996 @@
+@import 'fonts'
+@import 'vars'
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #fff
+  color: $dark
+
+.no-scroll
+  overflow-y: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+  width: fit-content
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0 24px
+  box-sizing: border-box
+  font-family: $default-font
+  border: 1px solid $white
+  border-radius: 32px
+  width: 100%
+  height: 54px
+  background: $white
+  color: $dark
+  font-size: 18px
+  line-height: 22px
+  letter-spacing: .6px
+  cursor: pointer
+  transition: .3s ease
+  &::placeholder
+    color: $dark40
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+  &:hover
+    border-color: $gray-stroke
+    color: $dark
+    &::placeholder
+      color: $dark
+  &:focus
+    border-color: $dark
+    color: $dark
+    background: $white
+  &:valid
+    background: #F0F0F0
+    color: $dark
+    border-color: $gray-stroke
+
+input[type="radio"], input[type="checkbox"]
+  width: auto
+  height: auto
+  appearance: auto
+  margin: 0 5px 0 0
+  display: inline
+
+label
+  display: block
+  width: 100%
+  margin: 0 0 16px
+  &:last-child
+    margin: 0
+
+textarea
+  resize: none
+  padding: 16px 24px
+  height: 140px
+
+.form-callback
+  margin: 24px 0 0
+  max-width: 453px
+
+.svg-icon
+  display: inline-block
+  width: 100%
+  height: 100%
+
+button, .btn
+  outline: none
+  transition: .3s ease
+  cursor: pointer
+  box-shadow: none
+  font-family: $default-font
+  padding: 0
+  margin: 0
+  border: none
+  border-radius: 0
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  padding: 15px 30px
+  font-size: 18px
+  line-height: 18px
+  letter-spacing: .6px
+  font-weight: 500
+  height: 52px
+  border-radius: 32px
+  text-transform: uppercase
+  transition: 0.3s ease
+
+.btn-group
+  width: 100%
+  .btn
+    margin: 0 24px 0 0
+    &:last-child
+      margin: 0
+
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn.dropdown-toggle-split:first-child, .btn-group>.btn:not(:last-child):not(.dropdown-toggle)
+  border-radius: 32px
+
+.btn-group>.btn-group:not(:first-child), .btn-group>:not(.btn-check:first-child)+.btn
+  margin-left: 0
+  border-radius: 32px
+
+.btn-icon
+  @include d-flex
+  width: 32px
+  height: 32px
+
+.btn-dark
+  background: $dark
+  color: $white
+  position: relative
+  z-index: 1
+  padding: 0
+  border: 1px solid $dark
+  .btn-text
+    padding: 17px 20px 17px 32px
+    transition: .3s ease
+  .btn-icon-arrow
+    fill: $white
+    height: 52px
+    min-width: 52px
+    width: 52px
+    border: 1px solid $white
+    border-radius: 50%
+    @include d-flex
+    transition: .3s ease
+    margin: 0 -1px 0 auto
+  &:hover
+    border: 1px solid $dark
+    background: transparent
+    color: $dark
+    .btn-icon-arrow
+      border-color: $dark
+      fill: $dark
+      svg
+        transform: rotate(45deg)
+  &:focus
+    background: $dark
+    color: $white
+    border-color: transparent
+    .btn-text
+      background: transparent
+      border-radius: 32px
+    .btn-icon-arrow
+      border-color: #fff
+      fill: #fff
+      svg
+        // transform: rotate(45deg)
+        transform: none
+  &.disabled
+    border: 1px solid $dark
+    background: $dark
+    color: $white
+    opacity: 0.5
+    .btn-icon-arrow
+      border-color: $white
+      fill: $white
+
+.btn-border
+  border: 1px solid $dark
+  color: $dark
+  &:hover
+    background: $dark
+    color: $white
+    .btn-icon
+      fill: $white
+  &:focus
+    background: $gray
+    color: $dark
+    .btn-icon
+      fill: $dark
+  &:disabled
+    opacity: 0.5
+    background: $accent
+    color: #fff
+    border-color: $accent
+    .btn-icon
+      fill: $white
+
+.btn-border-gray-stroke
+  border: 1px solid $gray-stroke
+  color: $gray-stroke
+  background: $white
+  .btn-icon-arrow
+    width: 52px
+    height: 52px
+    min-width: 52px
+    padding: 3.4px
+    border: 1px solid $gray-stroke
+    fill: $gray-stroke
+  &:hover
+    background: $dark
+    border-color: $dark
+    color: $white
+    .btn-icon-arrow
+      fill: $white
+      border-color: $white
+  &:focus
+    background: $accent
+    color: $white
+    border-color: $white
+    .btn-icon-a
+      border-color: $white
+      fill: $white
+  &:disabled
+    opacity: 0.5
+    background: transparent
+    color: $accent-second
+    border-color: transparent
+    .btn-text
+      background: $white
+      border-radius: 32px
+    .btn-icon-arrow
+      border-color: $white
+      fill: $white
+      background: transparent
+
+.btn-accent
+  background: $accent
+  color: $white
+  border: 1px solid $accent
+  .svg-icon
+    width: 24px
+    height: 24px
+    min-width: 24px
+    fill: $white
+  &:hover
+    background: $dark
+    color: $white
+    border-color: $dark
+    .svg-icon
+      fill: $white
+  &:focus
+    background: $gray
+    color: $dark
+    border-color: $dark
+    .svg-icon
+      fill: $dark
+  &:disabled
+    opacity: 0.5
+    background: $accent
+    border-color: $accent
+    color: $white
+    .svg-icon
+      fill: $white
+
+.btn-accent-v2
+  background: $accent
+  color: $white
+  position: relative
+  z-index: 1
+  border: none
+  padding: 0
+  .btn-text
+    padding: 17px 20px 17px 32px
+    transition: .3s ease
+  .btn-icon-arrow
+    fill: $white
+    height: 52px
+    min-width: 52px
+    width: 52px
+    border: 1px solid $white
+    border-radius: 50%
+    @include d-flex
+    transition: .3s ease
+    margin: 0 0 0 auto
+    padding: 3px
+    svg
+      width: 100%
+      height: 100%
+  &:hover
+    border: 1px solid $accent
+    background: transparent
+    color: $accent
+    .btn-icon-arrow
+      border-color: $accent
+      fill: $accent
+      svg
+        transform: rotate(45deg)
+  &:focus
+    background: $dark
+    color: $white
+    border: 1px solid $dark
+    .btn-icon-arrow
+      border-color: $white
+      fill: $white
+      svg
+        transform: rotate(45deg)
+  &.disabled
+    border: none
+    background: transparent
+    color: $white
+    opacity: 0.5
+    .btn-text
+      background: $accent
+      border-radius: 32px
+    .btn-icon-arrow
+      border-color: $accent
+      fill: $accent
+
+.btn-toggler
+  margin: 24px 0 0
+  .btn-icon
+    width: 32px
+    height: 32px
+    min-width: 32px
+    margin: 0 0 0 8px
+
+.btn-link
+  @include d-flex
+  width: 52px
+  height: 52px
+  min-width: 52px
+  border-radius: 50%
+  padding: 10px
+
+.btn-link-v2
+  padding: 3px
+
+.btn-link-border-accent
+  border: 1px solid $accent
+  fill: $accent
+  svg
+    transition: .3s ease
+  &:hover
+    background: $accent
+    fill: $white
+  &:focus
+    background: $dark
+    border-color: $dark
+
+    fill: $white
+  &:disabled
+    opacity: 0.3
+    fill: $accent
+    border-color: $accent
+
+.btn-add-favorite.active
+  &:focus
+    border: 1px solid $accent
+    fill: $accent
+    background: transparent
+
+.btn-link-border-gray-stroke
+  background: $white
+  border: 1px solid $gray-stroke
+  fill: $gray-stroke
+  svg
+    transition: .3s ease
+  &:hover
+    background: $gray-stroke
+    fill: $white
+  &:focus
+    background: $dark
+    border-color: $dark
+    fill: $white
+
+  &:disabled
+    opacity: 0.3
+    background: $white
+    fill: $gray-stroke
+    border-color: $gray-stroke
+
+.btn-link-white
+  background: $white
+  fill: $accent
+  border: 1px solid $white
+  &:hover
+    background: $accent
+    fill: $white
+    border-color: $accent
+    svg
+      transform: rotate(45deg)
+  &:focus
+    background: $dark
+    fill: $white
+    border-color: $dark
+    svg
+      transform: rotate(45deg)
+  &:disabled
+    background: $white
+    opacity: 0.3
+    fill: $dark
+    border-color: $dark
+
+.text-decoration
+  text-decoration: underline
+
+strong, b
+  font-weight: bold
+  display: inline
+
+ul, ol
+  padding: 0 0 0 20px
+
+.my-ul
+  list-style: none
+  padding: 0
+
+.list-dots
+  list-style-type: disc
+
+.container
+  max-width: 1512px
+  padding: 0 24px
+
+.container-fluid
+  padding: 0 24px
+
+.row
+  margin: 0 -12px
+  >*
+    padding: 0 12px
+
+.p-120
+  padding: 120px 0
+
+.p-80
+  padding: 80px 0
+
+.pt-32
+  padding-top: 32px
+
+.pb-32
+  padding-bottom: 32px
+
+.m-120
+  margin: 120px 0
+
+.p-24
+  padding: 24px 0
+
+.mb-16
+  margin-bottom: 16px
+
+.mb-24
+  margin-bottom: 24px
+
+.mb-32
+  margin-bottom: 32px
+
+.mb-48
+  margin-bottom: 48px
+
+.mb-55
+  margin-bottom: 55px
+
+.mb-64
+  margin-bottom: 64px
+
+.mb-80
+  margin-bottom: 80px
+
+.mt-24
+  margin-top: 24px
+
+.mt-48
+  margin-top: 48px
+
+.mt-120
+  margin-top: 120px
+
+.ml-auto
+  margin-left: auto
+
+.wrapper-bg
+  width: 100%
+  border-radius: 24px
+  &.bg-gray
+    background: $gray
+  &.bg-light
+    background: #f7f8f9
+  &.bg-light-gray
+    background: $light-gray
+
+h1, .h1
+  width: 100%
+  font-family: $title-font
+  font-size: 64px
+  line-height: 64px
+  font-weight: normal
+  margin: 0 0 24px
+
+h2, .h2
+  width: 100%
+  font-family: $title-font
+  font-size: 48px
+  line-height: 48px
+  font-weight: normal
+  margin: 0 0 32px
+
+h3, .h3
+  width: 100%
+  font-family: $title-font
+  font-size: 32px
+  line-height: 32px
+  margin: 0 0 12px
+
+h4, .h4
+  width: 100%
+  font-family: $title-font
+  font-size: 24px
+  line-height: 28px
+  font-weight: normal
+  margin: 0 0 8px
+
+.box-text
+  font-size: 18px
+  line-height: 22px
+  letter-spacing: .6px
+  p
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+.box-text-small
+  font-size: 14px
+  line-height: 14px
+
+.box-text-big
+  font-size: 32px
+  line-height: 36px
+  letter-spacing: 0
+
+.color-accent
+  color: $accent
+
+.color-gray-stroke
+  color: $gray-stroke
+
+.color-dark60
+  color: $dark60
+
+.color-dark40
+  color: $dark40
+
+.bg-white
+  background: $white
+
+.link
+  font-size: 18px
+  line-height: 20px
+  letter-spacing: .6px
+
+.rating-box
+  display: flex
+  align-items: center
+  font-size: 14px
+  line-height: 14px
+  letter-spacing: 0.6px
+  &__val
+    margin: 0 0 0 4px
+
+.list-rating
+  display: flex
+  align-items: center
+  li
+    @include d-flex
+    fill: $accent
+    margin: 0 4px 0 0
+    width: 16px
+    height: 16px
+    min-width: 16px
+    &:last-child
+      margin: 0
+
+.title-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 0 0 57px
+  h1
+    margin: 0
+  &__button
+    margin: auto 0 0 auto
+
+.page-home
+  padding: 80px 0 120px
+
+.nav-breadcrumb, .nav-pagination
+  width: 100%
+
+.nav-breadcrumb
+  overflow-x: auto
+
+.breadcrumb
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: nowrap
+  font-size: 16px
+  line-height: normal
+  font-family: $default-font
+  color: rgba(#13263D, .4)
+  margin: 0
+  li
+    a
+      display: flex
+      align-items: center
+      color: rgba(#13263D, .7)
+      &::after
+        content: '/'
+        margin: 0 7px
+        display: inline-block
+
+.pagination
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 18px
+  line-height: 22px
+  font-family: $default-font
+  li
+    &:first-child
+      margin: 0 16px 0 0
+    &:last-child
+      margin: 0 0 0 16px
+    a
+      padding: 0 10px
+      color: $dark40
+      &:hover
+        color: $accent
+      &:focus
+        color: $dark60
+      &:disabled
+        color: $dark40
+      &.active
+        color: $dark
+    .pagination-arrow
+      padding: 10px
+
+.pagination-arrow
+  width: 52px
+  height: 52px
+  min-width: 52px
+  @include d-flex
+  border-radius: 50%
+  border: 1px solid $gray-stroke
+  padding: 10px
+  fill: $gray-stroke
+  background: $white
+  &:hover
+    background: $accent
+    border-color: $accent
+    fill: #fff
+  &:focus
+    background: $dark
+    fill: #fff
+    border-color: $dark
+  &:disabled
+    background: $gray-stroke
+    fill: $dark
+    opacity: 0.5
+
+.accordion-item
+  width: 100%
+  margin: 0 0 32px
+  background: $white
+  border-radius: 24px
+  padding: 32px
+  &:first-child, &:last-child
+    border-radius: 24px
+
+.accordion-body
+  padding: 16px 0 0
+  width: 100%
+  color: $dark40
+  font-size: 18px
+  line-height: 22px
+
+.accordion-header
+  display: flex
+  align-items: center
+
+.accordion-button
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 0
+  &:after
+    content: ''
+    @include d-flex
+    border-radius: 50%
+    margin: 0 0 0 auto
+    padding: 10px
+    width: 52px
+    height: 52px
+    min-width: 52px
+    background: $gray url('../img/minus.svg') no-repeat center
+    background-size: 32px
+  &.collapsed
+    &:after
+      background: $gray url('../img/plus.svg') no-repeat center
+      background-size: 32px
+
+.accordion-button:not(.collapsed)
+  color: $dark
+
+.accordion-button:not(.collapsed)::after
+  background: $gray url('../img/minus.svg') no-repeat center
+  background-size: 32px
+
+// slick slider  
+.slick-slider
+  width: 100%
+
+.slick-slide
+  outline: none
+
+.slider-arrows
+  display: flex
+  align-items: center
+  .slick-arrow
+    position: relative
+    z-index: 1
+    transform: none
+    left: 0
+    top: 0
+    right: 0
+  .slick-next
+    margin: 0 0 0 16px
+
+.slick-arrow
+  @include d-flex
+  z-index: 2
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  opacity: 1
+  width: 52px
+  height: 52px
+  min-width: 52px
+  border-radius: 50%
+  border: 1px solid $dark
+  background: #fff
+  padding: 10px
+  fill: $dark
+  transition: .3s ease
+  &:hover
+    background: $accent
+    border-color: $accent
+    color: #fff
+    fill: #fff
+  &:focus
+    border-color: $dark
+    opacity: 0.3
+    fill: $dark
+    background: transparent
+  &:disabled
+    background: #fff
+    border-color: $gray-stroke
+    fill: $gray-stroke
+
+.slider-stretch
+  .slick-list
+    margin: 0 -9px
+  .slick-track
+    display: flex
+    align-items: stretch
+    height: 100%
+  .slick-slide
+    padding: 0 9px
+    height: auto
+
+.slick-dots
+  position: absolute
+  z-index: 1
+  opacity: 1
+  width: 100%
+  list-style: none
+  padding: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  left: 0
+  bottom: 12px
+  li
+    cursor: pointer
+    transition: .3s ease
+    width: 8px
+    height: 8px
+    min-width: 8px
+    margin: 0 9px 0 0
+    border-radius: 50%
+    background: rgba(#AFC7CE, .4)
+    &.slick-active
+      background: $accent
+    &:last-child
+      margin: 0
+    button
+      display: none
+
+.select-my
+  width: fit-content
+  background: $white url('../img/arrow-select.svg') no-repeat calc(100% - 10px) center
+  background-size: 32px
+  padding: 15px 48px 15px 24px
+  height: 52px
+  border: 1px solid $dark60
+  border-radius: 32px
+  appearance: none
+  &:valid
+    background: $white url('../img/arrow-select.svg') no-repeat calc(100% - 10px) center
+    background-size: 32px
+
+.dropdown-filter
+  margin: 0 0 0 auto
+  width: fit-content
+  display: none
+
+.dropdown
+  .btn-dropdown
+    background: $white
+    display: flex
+    align-items: center
+    border: 1px solid $dark60
+    border-radius: 32px
+    height: 52px
+    color: $dark60
+    padding: 10px 15px 10px 24px
+    font-size: 18px
+    line-height: 22px
+    &:after
+      content: ''
+      @include d-flex
+      min-width: 32px
+      width: 32px
+      height: 32px
+      background: url('../img/arrow-select.svg') no-repeat center
+      background-size: 100%
+      margin-left: 26px
+      transition: .3s ease
+    &:hover
+      background: $gray
+      border-color: $gray
+    &.show
+      color: $white
+      background: $accent
+      border-color: $accent
+      &:after
+        transform: rotate(180deg)
+        filter: brightness(0) invert(1)
+
+.dropdown-menu
+  width: 100%
+  max-width: 290px
+  margin: 8px 0 0
+  background: $white
+  border-radius: 16px
+  border: 1px solid $gray
+  padding: 12px
+  font-size: 18px
+  line-height: 22px
+  overflow: hidden
+  &__link
+    padding: 13px 24px
+    width: 100%
+    color: $dark
+    margin: 0 0 4px
+    font-size: 12px
+    line-height: normal
+    // &:last-child
+    //   margin: 0
+    &:hover
+      background: $accent
+      color: $white
+
+.select-catalog
+  margin: 0 0 0 auto
+
+.column-count-2
+  column-count: 2
+
+.column-count-4
+  column-count: 4
+
+//checkbox my
+.label-checkbox
+  position: relative
+  display: flex
+  align-items: flex-start
+  color: $dark60
+  font-size: 14px
+  font-weight: 300
+  line-height: 16px
+  margin: 16px 0
+  cursor: pointer
+  input
+    display: none
+    &:checked
+      ~.label-checkbox__text
+        color: $dark
+      +.label-checkbox__custom
+        background: $dark url('../img/check.svg') no-repeat center
+        background-size: 10px
+        border-color: $dark
+  &:hover
+    color: $dark
+    .label-checkbox__custom
+      border-color: $dark
+  &:focus
+    color: $dark
+    .label-checkbox__custom
+      border-color: $dark
+
+.label-checkbox__custom
+  margin: 0 8px 0 0
+  position: relative
+  border-radius: 0
+  border: 1px solid $dark60
+  background: transparent
+  width: 18px
+  height: 18px
+  min-width: 18px
+  cursor: pointer
+
+//checkbox my end

@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>UPDATEMED</title>
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- add plugins css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/fancybox.css">
+  <!-- add plugins css end -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="header-top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <nav class="nav nav-menu-user">
+              <ul class="menu-user my-ul">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="delivery.html">Shipping & Payment</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="blog.html">Blog</a></li>
+              </ul>
+            </nav>
+
+            <a href="mailto:info@updatemed.ru" class="mail-link">info@updatemed.ru</a>
+            <a href="#" class="link-callback" data-bs-toggle="modal" data-bs-target="#callbackModal">
+              Request a Call
+            </a>
+            <a href="tel:+78000000000" class="phone-link">8 (800) 00-000-00</a>
+
+            <ul class="menu-navigation my-ul">
+              <li>
+                <a href="basket.html" class="menu-navigation-link">
+                  <span class="menu-navigation-link__val">3</span>
+                  <svg class="svg-icon" aria-label="Shopping cart icon">
+                    <use xlink:href="img/sprite.svg#basket-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="favorite.html" class="menu-navigation-link">
+                  <span class="menu-navigation-link__val">35</span>
+                  <svg class="svg-icon" aria-label="Favorites icon">
+                    <use xlink:href="img/sprite.svg#favorite-icon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="comparison.html" class="menu-navigation-link">
+                  <span class="menu-navigation-link__val">2</span>
+                  <svg class="svg-icon" aria-label="Product comparison icon">
+                    <use xlink:href="img/sprite.svg#comparison-icon"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-center">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center">
+            <a href="index.html" class="logo">
+              <img src="img/logo.svg" alt="UpdateMed medical equipment store logo">
+            </a>
+
+            <form method="post" class="form-search">
+              <label>
+                <input type="text" placeholder="Search" name="search" required aria-label="Search products">
+              </label>
+              <button type="submit" aria-label="Search button">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#search-icon"></use>
+                </svg>
+              </button>
+            </form>
+
+            <nav class="nav-menu">
+              <ul class="menu my-ul">
+                <li class="menu-item dropdown">
+                  <a href="brands.html" class="menu-link dropdown-toggle">Brands</a>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-menu-list column-count-2 w-100">
+                      <a href="#" class="dropdown-menu__link">Gynecology Equipment</a>
+                      <a href="#" class="dropdown-menu__link">Dermatology Devices</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="menu-item dropdown">
+                  <a href="#" class="menu-link dropdown-toggle">Procedures</a>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-menu-list column-count-4 w-100">
+                      <a href="#" class="dropdown-menu__link">Lipolysis Treatments</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="menu-item dropdown">
+                  <a href="#" class="menu-link dropdown-toggle">Technologies</a>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-menu-list column-count-2 w-100">
+                      <a href="#" class="dropdown-menu__link">Alexandrite Technology</a>
+                      <a href="#" class="dropdown-menu__link active">Photoepilation Technology</a>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="menu-item dropdown">
+                  <a href="#" class="menu-link dropdown-toggle">Application Areas</a>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-menu-list w-100">
+                      <a href="#" class="dropdown-menu__link">Facial Treatments</a>
+                      <a href="#" class="dropdown-menu__link">Body Contouring</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+
+            <a href="tel:+78000000000" class="btn-call btn-border" aria-label="Call us">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#phone-icon"></use>
+              </svg>
+            </a>
+
+            <a href="#" class="btn-burger btn-border" aria-label="Open menu">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#burger-icon"></use>
+              </svg>
+              <svg class="svg-icon svg-icon-close">
+                <use xlink:href="img/sprite.svg#close-icon"></use>
+              </svg>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="home">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="home-content">
+            <div class="home-slider">
+              <div class="slide">
+                <div class="home-slider-item">
+                  <h1 class="h1">Extended Warranty for RF Lifting Devices</h1>
+                  <div class="box-text">
+                    <p>When purchasing Scarlett devices, an additional 3-year warranty applies</p>
+                  </div>
+                  <a href="catalog.html" class="btn btn-dark btn-accent-v2">
+                    <span class="btn-text">View Catalog</span>
+                    <span class="btn-icon-arrow"><svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+                      </svg></span>
+                  </a>
+                  <div class="home-slider-item__img"><img src="img/home-image1-mobile.png" alt="Home image"></div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="home-slider-item">
+                  <h1 class="h1">Extended Warranty for RF Lifting Devices</h1>
+                  <div class="box-text">
+                    <p>When purchasing Scarlett devices, an additional 3-year warranty applies</p>
+                  </div>
+                  <a href="catalog.html" class="btn btn-dark btn-accent-v2">
+                    <span class="btn-text">View Catalog</span>
+                    <span class="btn-icon-arrow"><svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+                      </svg></span>
+                  </a>
+                  <div class="home-slider-item__img"><img src="img/home-image1-mobile.png" alt="Home image"></div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="home-slider-item">
+                  <h1 class="h1">Extended Warranty for RF Lifting Devices</h1>
+                  <div class="box-text">
+                    <p>When purchasing Scarlett devices, an additional 3-year warranty applies</p>
+                  </div>
+                  <a href="catalog.html" class="btn btn-dark btn-accent-v2">
+                    <span class="btn-text">View Catalog</span>
+                    <span class="btn-icon-arrow"><svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+                      </svg></span>
+                  </a>
+                  <div class="home-slider-item__img"><img src="img/home-image1-mobile.png" alt="Home image"></div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="home-slider-item">
+                  <h1 class="h1">Extended Warranty for RF Lifting Devices</h1>
+                  <div class="box-text">
+                    <p>When purchasing Scarlett devices, an additional 3-year warranty applies</p>
+                  </div>
+                  <a href="catalog.html" class="btn btn-dark btn-accent-v2">
+                    <span class="btn-text">View Catalog</span>
+                    <span class="btn-icon-arrow"><svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+                      </svg></span>
+                  </a>
+                  <div class="home-slider-item__img"><img src="img/home-image1-mobile.png" alt="Home image"></div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="home-slider-item">
+                  <h1 class="h1">Extended Warranty for RF Lifting Devices</h1>
+                  <div class="box-text">
+                    <p>When purchasing Scarlett devices, an additional 3-year warranty applies</p>
+                  </div>
+                  <a href="catalog.html" class="btn btn-dark btn-accent-v2">
+                    <span class="btn-text">View Catalog</span>
+                    <span class="btn-icon-arrow"><svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+                      </svg></span>
+                  </a>
+                  <div class="home-slider-item__img"><img src="img/home-image1-mobile.png" alt="Home image"></div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="home-slider-item">
+                  <h1 class="h1">Extended Warranty for RF Lifting Devices</h1>
+                  <div class="box-text">
+                    <p>When purchasing Scarlett devices, an additional 3-year warranty applies</p>
+                  </div>
+                  <a href="catalog.html" class="btn btn-dark btn-accent-v2">
+                    <span class="btn-text">View Catalog</span>
+                    <span class="btn-icon-arrow"><svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+                      </svg></span>
+                  </a>
+                  <div class="home-slider-item__img"><img src="img/home-image1-mobile.png"
+                      alt="Scarlett RF lifting medical device for aesthetic clinics"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider-arrows home-slider-arrows"></div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 d-none d-lg-block">
+          <div class="home-slider-image">
+            <div class="slide">
+              <div class="home-slider-image__item"><img src="img/home-image1.png"
+                  alt="Scarlett RF lifting medical device for aesthetic clinics"></div>
+            </div>
+            <div class="slide">
+              <div class="home-slider-image__item"><img src="img/home-image1.png"
+                  alt="Scarlett RF lifting medical device for aesthetic clinics"></div>
+            </div>
+            <div class="slide">
+              <div class="home-slider-image__item"><img src="img/home-image1.png"
+                  alt="Scarlett RF lifting medical device for aesthetic clinics"></div>
+            </div>
+            <div class="slide">
+              <div class="home-slider-image__item"><img src="img/home-image1.png"
+                  alt="Scarlett RF lifting medical device for aesthetic clinics"></div>
+            </div>
+            <div class="slide">
+              <div class="home-slider-image__item"><img src="img/home-image1.png"
+                  alt="Scarlett RF lifting medical device for aesthetic clinics"></div>
+            </div>
+            <div class="slide">
+              <div class="home-slider-image__item"><img src="img/home-image1.png"
+                  alt="Scarlett RF lifting medical device for aesthetic clinics"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <div class="advantages-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-xl-3 mb-24">
+          <div class="advantages-box">
+            <div class="advantages-box__icon">
+              <img src="img/adv-icon1.svg" alt="Interest-free installment payment icon">
+            </div>
+            <div class="advantages-box__text">
+              <div class="box-text">
+                <p>Interest-Free Installments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-xl-3 mb-24">
+          <div class="advantages-box">
+            <div class="advantages-box__icon">
+              <img src="img/adv-icon2.svg" alt="Free worldwide shipping icon">
+            </div>
+            <div class="advantages-box__text">
+              <div class="box-text">
+                <p>Free Shipping</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-xl-3 mb-24">
+          <div class="advantages-box">
+            <div class="advantages-box__icon">
+              <img src="img/adv-icon3.svg" alt="Free training and onboarding icon">
+            </div>
+            <div class="advantages-box__text">
+              <div class="box-text">
+                <p>Free Training</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-xl-3 mb-24">
+          <div class="advantages-box">
+            <div class="advantages-box__icon">
+              <img src="img/adv-icon4.svg" alt="Warranty and technical support icon">
+            </div>
+            <div class="advantages-box__text">
+              <div class="box-text">
+                <p>Warranty Service</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="mission-section">
+    <div class="container">
+      <div class="row align-items-end">
+        <div class="col-lg-6 col-12 order-lg-1">
+          <h2>
+            <span class="color-accent">
+              <span class="color-gray-stroke">UPDATE</span>MED
+            </span><br>
+            — a reliable supplier of cosmetology equipment
+          </h2>
+          <div class="box-text">
+            <p>
+              We provide modern, high-tech equipment that meets the highest
+              standards of quality and safety.
+            </p>
+
+            <p>
+              By choosing UPDATEMED, you choose innovation,
+              quality, and a personalized approach.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="mission-text">
+            <h3>Our mission:</h3>
+            <div class="box-text">
+              <p>
+                To help beauty industry professionals reach new heights by providing
+                reliable solutions for successful work and business growth.
+              </p>
+            </div>
+            <a href="about.html" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#callbackModal">
+              <span class="btn-text">Learn more about the company</span>
+              <span class="btn-icon-arrow">
+                <svg class="svg-icon" aria-hidden="true">
+                  <use href="img/sprite.svg#arrow-diagonal"></use>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hits-section">
+    <div class="container">
+      <div class="row mb-48">
+        <div class="col-6">
+          <h2 class="m-0">Best Sellers</h2>
+        </div>
+        <div class="col-6">
+          <div class="slider-arrows hits-slider-arrows justify-content-end"></div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="hits-slider slider-stretch">
+            <div class="slide">
+              <div class="product-card">
+                <a href="#" class="btn-add-comparison btn-link btn-link-border-gray-stroke"><svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#comparison-icon"></use>
+                  </svg></a>
+                <a href="product.html" class="product-card__photo"><img src="img/hits1.png"
+                    alt="Inmode Morpheus 8 RF lifting device"></a>
+                <div class="product-card__body">
+                  <div class="product-card__head">
+                    <div class="product-card__head-box">
+                      <a href="product.html" class="product-card__name h4">Inmode Morpheus 8 RF Lifting Device</a>
+                    </div>
+                    <div class="product-card__head-box">
+                      <div class="rating-box justify-content-end">
+                        <ul class="list-rating my-ul">
+                          <li><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star-icon"></use>
+                            </svg></li>
+                          <li><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star-icon"></use>
+                            </svg></li>
+                          <li><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star-icon"></use>
+                            </svg></li>
+                          <li><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star-icon"></use>
+                            </svg></li>
+                          <li><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star-icon0"></use>
+                            </svg></li>
+                        </ul>
+                        <div class="rating-box__val">4,2</div>
+                      </div>
+
+                      <a href="#" class="link-review">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#chat-icon"></use>
+                        </svg>
+                        <span>3</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="box-text">
+                    <p>A recognized leader in the world of cosmetology equipment,
+                      combining innovation, style, and reliability.</p>
+                  </div>
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-accent btn-add-basket">
+                      <span class="btn-text">Add to cart</span>
+                      <svg class="svg-icon btn-icon">
+                        <use xlink:href="img/sprite.svg#plus-icon"></use>
+                      </svg>
+                    </a>
+
+                    <a href="#" class="btn-add-favorite btn-link btn-link-border-accent" data-bs-toggle="modal"
+                      data-bs-target="#callbackModal"><svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#favorite-icon"></use>
+                      </svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="product-card">
+                <a href="#" class="btn-add-comparison btn-link btn-link-border-gray-stroke"><svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#comparison-icon"></use>
+                  </svg></a>
+                <a href="product.html" class="product-card__photo"><img src="img/hits2.png"
+                    alt="Inmode Morpheus 8 RF lifting device"></a>
+                <div class="product-card__body">
+                  <div class="product-card__head">
+                    <div class="product-card__head-box">
+                      <a href="product.html" class="product-card__name h4">Scarlett RF-lifting device</a>
+                    </div>
+                    <div class="product-card__head-box">
+                      <div class="rating-box justify-content-end">
+                        <ul class="list-rating my-ul">
+                          <li><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star-icon"></use>
+                            </svg></li>
+                          <li><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star-icon"></use>
+                            </svg></li>
+                          <li><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star-icon"></use>
+                            </svg></li>
+                          <li><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star-icon"></use>
+                            </svg></li>
+                          <li><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star-icon0"></use>
+                            </svg></li>
+                        </ul>
+                        <div class="rating-box__val">4,2</div>
+                      </div>
+
+                      <a href="#" class="link-review">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#chat-icon"></use>
+                        </svg>
+                        <span>3</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="box-text">
+                    <p>A recognized leader in the world of cosmetology equipment,
+                      combining innovation, style, and reliability.</p>
+                  </div>
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-accent btn-add-basket">
+                      <span class="btn-text">Add to cart</span>
+                      <svg class="svg-icon btn-icon">
+                        <use xlink:href="img/sprite.svg#plus-icon"></use>
+                      </svg>
+                    </a>
+
+                    <a href="#" class="btn-add-favorite btn-link btn-link-border-accent"><svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#favorite-icon"></use>
+                      </svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="product-card">
+                <a href="#" class="btn-add-comparison btn-link btn-link-border-gray-stroke"><svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#comparison-icon"></use>
+                  </svg></a>
+                <a href="product.html" class="product-card__photo"><img src="img/hits3.png"
+                    alt="Inmode Morpheus 8 RF lifting device"></a>
+                <div class="product-card__body">
+                  <div class="product-card__head">
+                    <div class="product-card__head-box">
+                      <a href="product.html" class="product-card__name h4">SHENB Virtue RF RF lifting device</a>
+                    </div>
+                    <div class="product-card__head-box">
+                      <div class="rating-box justify-content-end">
+                        <ul class="list-rating my-ul">
+                          <li><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star-icon"></use>
+                            </svg></li>
+                          <li><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star-icon"></use>
+                            </svg></li>
+                          <li><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star-icon"></use>
+                            </svg></li>
+                          <li><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star-icon"></use>
+                            </svg></li>
+                          <li><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star-icon0"></use>
+                            </svg></li>
+                        </ul>
+                        <div class="rating-box__val">4,2</div>
+                      </div>
+
+                      <a href="#" class="link-review">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#chat-icon"></use>
+                        </svg>
+                        <span>3</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="box-text">
+                    <p>A recognized leader in the world of cosmetology equipment,
+                      combining innovation, style, and reliability.</p>
+                  </div>
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-accent btn-add-basket">
+                      <span class="btn-text">Add to cart</span>
+                      <svg class="svg-icon btn-icon">
+                        <use xlink:href="img/sprite.svg#plus-icon"></use>
+                      </svg>
+                    </a>
+
+                    <a href="#" class="btn-add-favorite btn-link btn-link-border-accent"><svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#favorite-icon"></use>
+                      </svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="product-card">
+                <a href="#" class="btn-add-comparison btn-link btn-link-border-gray-stroke"><svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#comparison-icon"></use>
+                  </svg></a>
+                <a href="product.html" class="product-card__photo"><img src="img/hits1.png"
+                    alt="Inmode Morpheus 8 RF lifting device"></a>
+                <div class="product-card__body">
+                  <div class="product-card__head">
+                    <div class="product-card__head-box">
+                      <a href="product.html" class="product-card__name h4">Inmode Morpheus 8 RF-lifting device</a>
+                    </div>
+                    <div class="product-card__head-box">
+                      <div class="rating-box justify-content-end">
+                        <ul class="list-rating my-ul">
+                          <li><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star-icon"></use>
+                            </svg></li>
+                          <li><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star-icon"></use>
+                            </svg></li>
+                          <li><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star-icon"></use>
+                            </svg></li>
+                          <li><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star-icon"></use>
+                            </svg></li>
+                          <li><svg class="svg-icon">
+                              <use xlink:href="img/sprite.svg#star-icon0"></use>
+                            </svg></li>
+                        </ul>
+                        <div class="rating-box__val">4,2</div>
+                      </div>
+
+                      <a href="#" class="link-review">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#chat-icon"></use>
+                        </svg>
+                        <span>3</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="box-text">
+                    <p>A recognized leader in the world of cosmetology equipment,
+                      combining innovation, style, and reliability.</p>
+                  </div>
+                  <div class="btn-group">
+                    <a href="#" class="btn btn-accent btn-add-basket">
+                      <span class="btn-text">Add to cart</span>
+                      <svg class="svg-icon btn-icon">
+                        <use xlink:href="img/sprite.svg#plus-icon"></use>
+                      </svg>
+                    </a>
+
+                    <a href="#" class="btn-add-favorite btn-link btn-link-border-accent"><svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#favorite-icon"></use>
+                      </svg></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular-section bg-white p-120">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 mb-48">
+          <h2 class="m-0">Popular categories</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-6 col-xl-4 mb-24">
+          <div class="popular-card popular-card1">
+            <a href="catalog.html" class="popular-card__img"><img src="img/category1.png" alt="RF-lifting devices"></a>
+            <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+              </svg></a>
+            <div class="popular-card__content">
+              <a href="catalog.html" class="popular-card__name">RF-lifting devices</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4 mb-24">
+          <div class="popular-card popular-card-v2 popular-card2">
+            <a href="catalog.html" class="popular-card__img"><img src="img/category2.png"
+                alt="Devices for SMAS-lifting"></a>
+            <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+              </svg></a>
+            <div class="popular-card__content">
+              <a href="catalog.html" class="popular-card__name">Devices for SMAS-lifting</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4 mb-24">
+          <div class="popular-card popular-card3">
+            <a href="catalog.html" class="popular-card__img"><img src="img/category3.png"
+                alt="Devices for body shaping"></a>
+            <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+              </svg></a>
+            <div class="popular-card__content">
+              <a href="catalog.html" class="popular-card__name">Devices for body shaping</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4 mb-24">
+          <div class="popular-card popular-card-v2 popular-card4">
+            <a href="catalog.html" class="popular-card__img"><img src="img/category4.png"
+                alt="Cosmetological combaines"></a>
+            <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+              </svg></a>
+            <div class="popular-card__content">
+              <a href="catalog.html" class="popular-card__name">Cosmetological combaines</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4 mb-24">
+          <div class="popular-card popular-card5">
+            <a href="catalog.html" class="popular-card__img"><img src="img/category5.png" alt="IPL-lasers"></a>
+            <a href="article.html" class="btn btn-link btn-link-v2 btn-link-white"><svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+              </svg></a>
+            <div class="popular-card__content">
+              <a href="catalog.html" class="popular-card__name">IPL-lasers</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-xl-4 mb-24">
+          <div class="popular-card popular-card-all">
+            <a href="catalog.html" class="popular-card__img"><img src="img/arrow-max.svg"
+                alt="More products in the catalog"></a>
+
+            <a href="catalog.html" class="popular-card__name h3">More products in the catalog</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="products-category">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Products by category</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-4 mb-16">
+          <div class="products-category-box">
+            <h3>Technologies</h3>
+
+            <a href="#" class="products-category__link">
+              <span class="products-category__link-text">alexandrite</span>
+              <span class="products-category__link-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+                </svg>
+              </span>
+            </a>
+            <a href="#" class="products-category__link">
+              <span class="products-category__link-text">photoepilation</span>
+              <span class="products-category__link-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+                </svg>
+              </span>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 mb-16">
+          <div class="products-category-box">
+            <h3>Procedures</h3>
+
+            <a href="#" class="products-category__link">
+              <span class="products-category__link-text">for lipolysis</span>
+              <span class="products-category__link-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+                </svg>
+              </span>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 mb-16">
+          <div class="products-category-box">
+            <h3>Areas of application</h3>
+
+            <a href="#" class="products-category__link">
+              <span class="products-category__link-text">For face</span>
+              <span class="products-category__link-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+                </svg>
+              </span>
+            </a>
+            <a href="#" class="products-category__link">
+              <span class="products-category__link-text">Body shaping</span>
+              <span class="products-category__link-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+                </svg>
+              </span>
+            </a>
+
+            <a href="#" class="products-category__link">
+              <span class="products-category__link-text">Body shaping</span>
+              <span class="products-category__link-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+                </svg>
+              </span>
+            </a>
+
+            <a href="#" class="products-category__link">
+              <span class="products-category__link-text">Body shaping</span>
+              <span class="products-category__link-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+                </svg>
+              </span>
+            </a>
+
+            <a href="#" class="products-category__link">
+              <span class="products-category__link-text">Body shaping</span>
+              <span class="products-category__link-icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="brands-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="wrapper-bg">
+            <div class="brands-wrapper">
+              <h2>Popular brands</h2>
+              <ul class="list-brands my-ul">
+                <li><a href="#"><img src="img/brand1.svg" alt="Popular brands"></a></li>
+                <li><a href="#"><img src="img/brand2.svg" alt="Popular brands"></a></li>
+                <li><a href="#"><img src="img/brand3.svg" alt="Popular brands"></a></li>
+                <li><a href="#"><img src="img/brand4.svg" alt="Popular brands"></a></li>
+                <li><a href="#"><img src="img/brand5.svg" alt="Popular brands"></a></li>
+                <li><a href="#" class="brand-logo6"><img src="img/brand6.png" alt="Popular brands"></a></li>
+                <li><a href="#" class="brand-logo7"><img src="img/brand7.png" alt="Popular brands"></a></li>
+                <li><a href="#"><img src="img/brand8.svg" alt="Popular brands"></a></li>
+                <li><a href="#" class="brand-logo9"><img src="img/brand9.png" alt="Popular brands"></a></li>
+                <li><a href="#"><img src="img/brand10.svg" alt="Popular brands"></a></li>
+                <li><a href="#"><img src="img/brand11.svg" alt="Popular brands"></a></li>
+                <li><a href="#"><img src="img/brand12.svg" alt="Popular brands"></a></li>
+                <li><a href="#"><img src="img/brand13.svg" alt="Popular brands"></a></li>
+                <li><a href="#" class="brand-logo14"><img src="img/brand14.png" alt="Popular brands"></a></li>
+                <li><a href="#" class="brand-logo15"><img src="img/brand15.png" alt="Popular brands"></a></li>
+                <li><a href="#" class="brand-logo16"><img src="img/brand16.png" alt="Popular brands"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps-order callback-section p-24">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xl-5 col-lg-6 col-12">
+          <div class="steps-order__content">
+            <div class="steps-order__wrapper">
+              <h2>Personal consultation</h2>
+              <div class="box-text">
+                <p>Fill out the form, and our specialists will contact you shortly. We're always ready to help you
+                  choose the best cosmetology equipment for your business.</p>
+              </div>
+              <form method="post" class="form-callback">
+                <label><input type="text" placeholder="Name" name="name" required></label>
+                <label><input type="text" placeholder="Telephone" name="phone" required></label>
+                <label class="label-checkbox">
+                  <input type="checkbox" name="checkbox" required>
+                  <span class="label-checkbox__custom"></span>
+                  <span class="label-checkbox__text">By clicking the button, you agree to the terms of processing
+                    personal data</span>
+                </label>
+                <button type="submit" class="btn btn-accent">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-7 col-lg-6 col-12">
+          <div class="steps-order__img"><img src="img/callback-img.jpg" alt="Personal consultation"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews-section bg-white">
+    <div class="container">
+      <div class="row mb-48 align-items-center">
+        <div class="col-12 col-sm-6">
+          <h2 class="m-0">Reviews</h2>
+        </div>
+        <div class="col-12 col-sm-6">
+          <a href="reviews.html" class="btn btn-dark ml-auto">
+            <span class="btn-text">all reviews</span>
+            <span class="btn-icon-arrow"><svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-xl-6 mb-48">
+          <div class="reviews-card">
+            <a href="reviews.html" class="reviews-card__photo"><img src="img/product1.png" alt="Reviews"></a>
+            <div class="reviews-card__body">
+              <div class="reviews-card__head">
+                <div class="reviews-card__head-box">
+                  <a href="product.html" class="reviews-card__title h3">Alma <br>soprano</a>
+                  <a href="catalog.html" class="category-product-link link">Diode lasers</a>
+                </div>
+                <div class="reviews-card__head-box">
+                  <div class="reviews-card__date">22.09.2024</div>
+                  <div class="rating-box">
+                    <ul class="list-rating my-ul">
+                      <li><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star-icon"></use>
+                        </svg></li>
+                      <li><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star-icon"></use>
+                        </svg></li>
+                      <li><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star-icon"></use>
+                        </svg></li>
+                      <li><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star-icon"></use>
+                        </svg></li>
+                      <li><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star-icon0"></use>
+                        </svg></li>
+                    </ul>
+                    <div class="rating-box__val">4,2</div>
+                  </div>
+                  <a href="#" class="link-reviews-all text-decoration">All reviews (33)</a>
+                </div>
+              </div>
+              <div class="reviews-card__content">
+                <div class="h4">Victoria Seregina</div>
+                <div class="box-text">
+                  <p>I would like to say thank you to UPDATEMED for the Alma soprano laser, which we recently purchased.
+                    Work</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam ea, ad nobis atque ipsam fuga
+                    totam nihil quae cupiditate explicabo iusto vitae officiis, velit quidem molestiae quas eum quasi!
+                  </p>
+                </div>
+
+                <a href="#" class="link-load-more">
+                  <span>Show more</span>
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 mb-48">
+          <div class="reviews-card">
+            <a href="reviews.html" class="reviews-card__photo"><img src="img/product2.png" alt="Reviews"></a>
+            <div class="reviews-card__body">
+              <div class="reviews-card__head">
+                <div class="reviews-card__head-box">
+                  <a href="product.html" class="reviews-card__title h3">SHENB <br>
+                    Virtue RF</a>
+                  <a href="catalog.html" class="category-product-link link">Diode lasers</a>
+                </div>
+                <div class="reviews-card__head-box">
+                  <div class="reviews-card__date">22.09.2024</div>
+                  <div class="rating-box">
+                    <ul class="list-rating my-ul">
+                      <li><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star-icon"></use>
+                        </svg></li>
+                      <li><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star-icon"></use>
+                        </svg></li>
+                      <li><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star-icon"></use>
+                        </svg></li>
+                      <li><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star-icon"></use>
+                        </svg></li>
+                      <li><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star-icon0"></use>
+                        </svg></li>
+                    </ul>
+                    <div class="rating-box__val">4,2</div>
+                  </div>
+                  <a href="#" class="link-reviews-all text-decoration">All reviews (33)</a>
+                </div>
+              </div>
+              <div class="reviews-card__content">
+                <div class="h4">Victoria Seregina</div>
+                <div class="box-text">
+                  <p>I would like to say thank you to UPDATEMED for the Alma soprano laser, which we recently purchased.
+                    Work</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam ea, ad nobis atque ipsam fuga
+                    totam nihil quae cupiditate explicabo iusto vitae officiis, velit quidem molestiae quas eum quasi!
+                  </p>
+                </div>
+
+                <a href="#" class="link-load-more">
+                  <span>Show more</span>
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 mb-48">
+          <div class="reviews-card">
+            <a href="reviews.html" class="reviews-card__photo"><img src="img/product3.png" alt="Reviews"></a>
+            <div class="reviews-card__body">
+              <div class="reviews-card__head">
+                <div class="reviews-card__head-box">
+                  <a href="product.html" class="reviews-card__title h3">Inmode <br>Morpheus 8</a>
+                  <a href="catalog.html" class="category-product-link link">Diode lasers</a>
+                </div>
+                <div class="reviews-card__head-box">
+                  <div class="reviews-card__date">22.09.2024</div>
+                  <div class="rating-box">
+                    <ul class="list-rating my-ul">
+                      <li><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star-icon"></use>
+                        </svg></li>
+                      <li><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star-icon"></use>
+                        </svg></li>
+                      <li><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star-icon"></use>
+                        </svg></li>
+                      <li><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star-icon"></use>
+                        </svg></li>
+                      <li><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star-icon0"></use>
+                        </svg></li>
+                    </ul>
+                    <div class="rating-box__val">4,2</div>
+                  </div>
+                  <a href="#" class="link-reviews-all text-decoration">All reviews (33)</a>
+                </div>
+              </div>
+              <div class="reviews-card__content">
+                <div class="h4">Victoria Seregina</div>
+                <div class="box-text">
+                  <p>I would like to say thank you to UPDATEMED for the Alma soprano laser, which we recently purchased.
+                    Work</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam ea, ad nobis atque ipsam fuga
+                    totam nihil quae cupiditate explicabo iusto vitae officiis, velit quidem molestiae quas eum quasi!
+                  </p>
+                </div>
+
+                <a href="#" class="link-load-more">
+                  <span>Show more</span>
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 mb-48">
+          <div class="reviews-card">
+            <a href="reviews.html" class="reviews-card__photo"><img src="img/product4.png" alt="Reviews"></a>
+            <div class="reviews-card__body">
+              <div class="reviews-card__head">
+                <div class="reviews-card__head-box">
+                  <a href="product.html" class="reviews-card__title h3">Cynosure <br>Potenza</a>
+                  <a href="catalog.html" class="category-product-link link">Diode lasers</a>
+                </div>
+                <div class="reviews-card__head-box">
+                  <div class="reviews-card__date">22.09.2024</div>
+                  <div class="rating-box">
+                    <ul class="list-rating my-ul">
+                      <li><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star-icon"></use>
+                        </svg></li>
+                      <li><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star-icon"></use>
+                        </svg></li>
+                      <li><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star-icon"></use>
+                        </svg></li>
+                      <li><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star-icon"></use>
+                        </svg></li>
+                      <li><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star-icon0"></use>
+                        </svg></li>
+                    </ul>
+                    <div class="rating-box__val">4,2</div>
+                  </div>
+                  <a href="#" class="link-reviews-all text-decoration">All reviews (33)</a>
+                </div>
+              </div>
+              <div class="reviews-card__content">
+                <div class="h4">Victoria Seregina</div>
+                <div class="box-text">
+                  <p>I would like to say thank you to UPDATEMED for the Alma soprano laser, which we recently purchased.
+                    Work</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam ea, ad nobis atque ipsam fuga
+                    totam nihil quae cupiditate explicabo iusto vitae officiis, velit quidem molestiae quas eum quasi!
+                  </p>
+                </div>
+
+                <a href="#" class="link-load-more">
+                  <span>Show more</span>
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blog-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="wrapper-bg bg-gray p-120">
+            <div class="container">
+              <div class="row mb-48 align-items-center">
+                <div class="col-12 col-sm-6">
+                  <h2 class="m-0">Blog</h2>
+                </div>
+                <div class="col-12 col-sm-6">
+                  <a href="blog.html" class="btn btn-dark ml-auto">
+                    <span class="btn-text">all articles</span>
+                    <span class="btn-icon-arrow"><svg class="svg-icon">
+                        <use xlink:href="img/sprite.svg#arrow-diagonal"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <div class="blog-card">
+                    <div class="blog-card__head">
+                      <div class="blog-card__date">01.02.2025</div>
+                      <a href="blog.html" class="blog-card__img"><img src="img/blog1.jpg" alt="Blog"></a>
+                    </div>
+                    <div class="blog-card__body">
+                      <a href="blog.html" class="blog-card__title h4">How to choose the ideal cosmetology equipment for
+                        your business?</a>
+                      <div class="box-text">
+                        <p>Looking for equipment for a beauty salon or clinic?
+                          In our new blog, we'll tell you what to look for when choosing, how to avoid overpaying, and
+                          which technologies are trending today...</p>
+                        <a href="article.html" class="link-details link">More details</a>
+                      </div>
+                      <a href="article.html" class="btn btn-link btn-link-border-accent"><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#arrow-right"></use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="blog-card">
+                    <div class="blog-card__head">
+                      <div class="blog-card__date">01.02.2025</div>
+                      <a href="blog.html" class="blog-card__img"><img src="img/blog2.jpg" alt="Blog 2"></a>
+                    </div>
+                    <div class="blog-card__body">
+                      <a href="blog.html" class="blog-card__title h4">Top 10 Essential Cosmetology Equipment for a
+                        Modern Cosmetology Office</a>
+                      <div class="box-text">
+                        <p>Modern cosmetology equipment plays a crucial role in the success of your beauty salon or
+                          beauty office. When everyone else offers similar treatments, it's important to stand out from
+                          the competition...</p>
+                        <a href="article.html" class="link-details link">More details</a>
+                      </div>
+                      <a href="article.html" class="btn btn-link btn-link-border-accent"><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#arrow-right"></use>
+                        </svg></a>
+                    </div>
+                  </div>
+                  <div class="blog-card">
+                    <div class="blog-card__head">
+                      <div class="blog-card__date">01.02.2025</div>
+                      <a href="blog.html" class="blog-card__img"><img src="img/blog3.jpg" alt="Blog"></a>
+                    </div>
+                    <div class="blog-card__body">
+                      <a href="blog.html" class="blog-card__title h4">Equipment certification and liability</a>
+                      <div class="box-text">
+                        <p>In this article, we'll discuss a very important detail related to equipment certification.
+                          General questions about what documents devices require and how to verify them have already
+                          been addressed, but...</p>
+                        <a href="article.html" class="link-details link">More details</a>
+                      </div>
+                      <a href="article.html" class="btn btn-link btn-link-border-accent"><svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#arrow-right"></use>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="seo-content p-120">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <div class="seo-content__wrapper">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="seo-content__content">
+                    <h2>
+                      Cosmetology Equipment from UPDATEMED
+                      <span class="color-accent">— the key to your business success</span>
+                    </h2>
+                    <div class="box-text">
+                      <p>
+                        Looking for high-quality and reliable cosmetology equipment?
+                        UPDATEMED offers a wide range of modern solutions for beauty salons and clinics.
+                        <strong>
+                          We understand what matters to beauty industry professionals and are ready to offer:
+                        </strong>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                  <ul class="list-advantages my-ul">
+                    <li class="list-advantages-item">
+                      <h3 class="h4">Wide product range</h3>
+                      <div class="box-text">
+                        <p>
+                          Devices for facial and body care, lasers, contouring equipment, and much more
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="list-advantages-item">
+                      <h4>Advanced technologies</h4>
+                      <div class="box-text">
+                        <p>
+                          Equipment with innovative features to achieve maximum results
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="list-advantages-item">
+                      <h4>Quality and safety</h4>
+                      <div class="box-text">
+                        <p>
+                          Certified products from leading global manufacturers
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="list-advantages-item">
+                      <h3 class="h4">Wide product range</h3>
+                      <div class="box-text">
+                        <p>
+                          Devices for facial and body care, lasers, contouring equipment, and much more
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="list-advantages-item">
+                      <h4>Advanced technologies</h4>
+                      <div class="box-text">
+                        <p>
+                          Equipment with innovative features to achieve maximum results
+                        </p>
+                      </div>
+                    </li>
+
+                    <li class="list-advantages-item">
+                      <h4>Quality and safety</h4>
+                      <div class="box-text">
+                        <p>
+                          Certified products from leading global manufacturers
+                        </p>
+                      </div>
+                    </li>
+                  </ul>
+
+                  <a href="#" class="btn btn-border btn-toggler">
+                    <span>Show more</span>
+                    <svg class="svg-icon btn-icon">
+                      <use xlink:href="img/sprite.svg#plus-icon"></use>
+                    </svg>
+                  </a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="steps-order p-24">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="steps-order__content">
+            <div class="steps-order__wrapper">
+              <h2>How to place an order?</h2>
+
+              <div class="steps-order-box">
+                <div class="steps-order-box__number h2">01</div>
+                <div class="steps-order-box__text">
+                  <p>Select the appropriate equipment on our website</p>
+                </div>
+              </div>
+
+              <div class="steps-order-box">
+                <div class="steps-order-box__number h2">02</div>
+                <div class="steps-order-box__text">
+                  <p>Submit a request via the contact form or contact us by phone</p>
+                </div>
+              </div>
+
+              <div class="steps-order-box">
+                <div class="steps-order-box__number h2">03</div>
+                <div class="steps-order-box__text">
+                  <p>Receive consultation and recommendations from our specialists</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="steps-order__img">
+            <img src="img/steps-order-img.jpg" alt="Steps of ordering professional cosmetology equipment">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12 d-block d-lg-none">
+          <a href="index.html" class="logo">
+            <img src="img/logo-footer.svg" alt="UPDATEMED company logo">
+          </a>
+        </div>
+
+        <div class="col-12 d-flex flex-wrap align-items-start">
+
+          <div class="footer-column">
+            <a href="index.html" class="logo d-none d-lg-flex">
+              <img src="img/logo-footer.svg" alt="UPDATEMED company logo">
+            </a>
+            <div class="box-information">
+              <p>© 2013–2024 LLC “Test”, 6 Mira St., Moscow, 129626.</p>
+              <p>
+                All information on this website is for informational purposes only<br>
+                and does not constitute a public offer
+              </p>
+            </div>
+          </div>
+
+          <ul class="menu-documents my-ul">
+            <li class="menu-documents__item">
+              <a href="#" class="menu-documents__link link" target="_blank">
+                Personal Data Processing Policy
+              </a>
+            </li>
+            <li class="menu-documents__item">
+              <a href="#" class="menu-documents__link link" target="_blank">
+                User Agreement
+              </a>
+            </li>
+            <li class="menu-documents__item">
+              <a href="#" class="menu-documents__link link" target="_blank">
+                Consent to Data Processing by Analytics Services
+              </a>
+            </li>
+            <li class="menu-documents__item">
+              <a href="#" class="menu-documents__link link" target="_blank">
+                Consent to Personal Data Processing
+              </a>
+            </li>
+          </ul>
+
+          <ul class="menu-footer my-ul">
+            <li class="menu-footer__item"><a href="catalog.html" class="menu-footer__link link">Catalog</a></li>
+            <li class="menu-footer__item"><a href="about.html" class="menu-footer__link link">About Us</a></li>
+            <li class="menu-footer__item"><a href="services.html" class="menu-footer__link link">Services</a></li>
+            <li class="menu-footer__item"><a href="delivery.html" class="menu-footer__link link">Delivery & Payment</a>
+            </li>
+            <li class="menu-footer__item"><a href="reviews.html" class="menu-footer__link link">Reviews</a></li>
+            <li class="menu-footer__item"><a href="blog.html" class="menu-footer__link link">Blog</a></li>
+          </ul>
+
+          <div class="footer-contacts">
+            <div class="footer-contacts-item">
+              <span>Address:</span>
+              <p>Moscow, Gladkova St., 6, 117312</p>
+            </div>
+            <div class="footer-contacts-item">
+              <span>Phone:</span>
+              <a href="tel:+7800000000"><span class="color-accent">8 (800)</span> 00-00-00</a>
+            </div>
+            <div class="footer-contacts-item">
+              <span>E-mail:</span>
+              <a href="mailto:info@updatemed.ru">info@updatemed.ru</a>
+            </div>
+          </div>
+
+          <ul class="list-messengers list-messengers-column my-ul">
+            <li><a href="#"><svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#vk-icon"></use>
+                </svg></a></li>
+            <li><a href="#"><svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#viber-icon"></use>
+                </svg></a></li>
+            <li><a href="#"><svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#whatsapp-icon"></use>
+                </svg></a></li>
+          </ul>
+
+          <a href="#" class="btn-border btn-toggle-documents">
+            <span>Legal Documents</span>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="callbackModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <div class="modal-title h2">Request a Call Back</div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#close-icon"></use>
+            </svg>
+          </button>
+          <div class="box-text">
+            <p>
+              Fill out the form and our specialists will contact you shortly.
+              We are always ready to help you choose the best cosmetology equipment for your business.
+            </p>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <form method="post" class="form-callback">
+            <label><input type="text" placeholder="Name" name="name" required></label>
+            <label><input type="text" placeholder="Telephone" name="phone" required></label>
+            <div class="form-footer">
+              <label class="label-checkbox">
+                <input type="checkbox" name="checkbox" required>
+                <span class="label-checkbox__custom"></span>
+                <span class="label-checkbox__text">
+                  By clicking the button, you agree to the terms of personal data processing
+                </span>
+              </label>
+              <button type="submit" class="btn btn-accent">Send</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="priceModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <div class="modal-title h2">Request a Price</div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#close-icon"></use>
+            </svg>
+          </button>
+          <div class="box-text">
+            <p>
+              Fill out the form and our specialists will contact you shortly.
+              We are always ready to help you choose the best cosmetology equipment for your business.
+            </p>
+          </div>
+        </div>
+
+        <div class="modal-body">
+          <form method="post" class="form-callback">
+            <label><input type="text" placeholder="Name" name="name" required></label>
+            <label><input type="text" placeholder="Telephone" name="phone" required></label>
+            <label><input type="text" placeholder="E-mail" name="mail" required></label>
+            <div class="form-footer">
+              <label class="label-checkbox">
+                <input type="checkbox" name="checkbox" required>
+                <span class="label-checkbox__custom"></span>
+                <span class="label-checkbox__text">
+                  By clicking the button, you agree to the terms of personal data processing
+                </span>
+              </label>
+              <button type="submit" class="btn btn-accent">Send</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- add plugins js-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/fancybox.umd.js"></script>
+  <!-- add plugins js end-->
+
+  <script src="js/common.js"></script>
+
+</body>
+
+</html>

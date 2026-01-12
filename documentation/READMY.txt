@@ -1,0 +1,28 @@
+Template Name: UpdateMed – Medical & Beauty Equipment HTML Template
+Version: 1.0
+Author: UpdateMed
+Template Type: HTML5 Website Template
+Framework: Bootstrap 5
+
+Description:
+UpdateMed is a modern HTML template designed for medical, cosmetic, and beauty equipment online stores. 
+The template includes multiple pages, clean UI, responsive layout, and is easy to customize.
+
+Included Pages:
+- Home
+- Catalog
+- Product Page
+- Shopping Cart
+- Brands
+- Blog & Article
+- Favorites
+- Warranty
+- Contacts
+
+Note:
+Images used in demo are for preview purposes only and are not included.
+
+Support:
+For template support, please contact the author via TemplateMonster profile.
+
+© UpdateMed
